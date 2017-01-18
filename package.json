@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/skibinska/personal-website#readme",
   "dependencies": {
-    "hapi": "^16.1.0"
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
