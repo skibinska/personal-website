@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-css": "sass --watch scss/main.scss:public/styles/main.css",
+    "dev-start": "nodemon ./server/start.js",
     "start": "node ./server/start.js",
-    "devStart": "nodemon ./server/start.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass --watch scss/main.scss:public/styles/main.css"
+    "test": "./node_modules/tape/bin/tape tests/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,10 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": "6.9.1"
   }
 }
