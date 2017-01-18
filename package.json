@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./server/start.js",
+    "devStart": "nodemon ./server/start.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass --watch scss/main.scss:public/styles/main.css",
+    "build-css": "sass --watch scss/main.scss:public/styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/skibinska/personal-website/issues"
   },
-  "homepage": "https://github.com/skibinska/personal-website#readme"
+  "homepage": "https://github.com/skibinska/personal-website#readme",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "nodemon": "^1.11.0"
+  }
 }
