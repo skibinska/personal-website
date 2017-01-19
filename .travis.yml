@@ -4,5 +4,5 @@ node_js:
 before_install:
   - npm install -g codecov
 after_success:
-  - istanbul cover ./tests/index.test.js --report lcovonly -- -R spec
+  - istanbul cover ./tests/**/*.test.js --report lcovonly -- -R spec
   - codecov
