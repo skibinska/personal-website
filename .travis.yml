@@ -1,8 +1,13 @@
 language: node_js
 node_js:
   - 6.1
+addons:
+    code_climate:
+        repo_token: 30bbfa99183c3a488919eb0713bc8a4f93bd2cebe5a62a5e383d5dc64057868f
 before_install:
   - npm install -g codecov
 after_success:
   - istanbul cover ./tests/**/*.test.js --report lcovonly -- -R spec
   - codecov
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < ./coverage/lcov.info
