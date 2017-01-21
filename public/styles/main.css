@@ -1,3 +1,73 @@
+.nav--icon {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .nav--icon .line {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: black;
+    opacity: 1;
+    left: 0;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .nav--icon .line:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center; }
+    .nav--icon .line:nth-child(2) {
+      top: 10px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center; }
+    .nav--icon .line:nth-child(3) {
+      top: 21px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center; }
+  .nav--icon.open .line:nth-child(1) {
+    top: -3px;
+    left: 8px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .nav--icon.open .line:nth-child(2) {
+    width: 0%;
+    opacity: 0; }
+  .nav--icon.open .line:nth-child(3) {
+    top: 26px;
+    left: 8px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
   float: left; }
@@ -8,7 +78,7 @@
     margin-left: 35px; }
 
 .navigation {
-  float: right; }
+  text-align: center; }
   .navigation .navigation--item {
     list-style-type: none;
     display: inline-block;
