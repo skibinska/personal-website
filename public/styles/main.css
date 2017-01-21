@@ -1,4 +1,25 @@
-.header {
-  background-color: red; }
+.header--logo {
+  font-family: "Open Sans Condensed", sans-serif;
+  float: left; }
+  .header--logo .header--title {
+    margin: 0; }
+  .header--logo .header--teaser {
+    margin-top: -10px;
+    margin-left: 35px; }
+
+.navigation {
+  float: right; }
+  .navigation .navigation--item {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer; }
+    .navigation .navigation--item:hover {
+      opacity: 0.6; }
+
+.intro {
+  clear: both; }
 
 /*# sourceMappingURL=main.css.map */
