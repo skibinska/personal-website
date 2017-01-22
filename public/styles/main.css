@@ -11,24 +11,6 @@
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
   animation: slideDown 0.75s ease-in-out 0s normal; }
 
-.js-slide-down-delay-1s {
-  -webkit-animation: slideDown 0.75s ease-in-out 1s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 1s normal;
-  -o-animation: slideDown 0.75s ease-in-out 1s normal;
-  animation: slideDown 0.75s ease-in-out 1s normal; }
-
-.js-slide-down-delay-2s {
-  -webkit-animation: slideDown 0.75s ease-in-out 2s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 2s normal;
-  -o-animation: slideDown 0.75s ease-in-out 2s normal;
-  animation: slideDown 0.75s ease-in-out 2s normal; }
-
-.js-slide-down-delay-3s {
-  -webkit-animation: slideDown 0.75s ease-in-out 3s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 3s normal;
-  -o-animation: slideDown 0.75s ease-in-out 3s normal;
-  animation: slideDown 0.75s ease-in-out 3s normal; }
-
 @keyframes slideUp {
   0% {
     opacity: 1;
@@ -126,24 +108,6 @@
   -moz-animation: slideDown 0.75s ease-in-out 0s normal;
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
   animation: slideDown 0.75s ease-in-out 0s normal; }
-
-.js-slide-down-delay-1s {
-  -webkit-animation: slideDown 0.75s ease-in-out 1s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 1s normal;
-  -o-animation: slideDown 0.75s ease-in-out 1s normal;
-  animation: slideDown 0.75s ease-in-out 1s normal; }
-
-.js-slide-down-delay-2s {
-  -webkit-animation: slideDown 0.75s ease-in-out 2s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 2s normal;
-  -o-animation: slideDown 0.75s ease-in-out 2s normal;
-  animation: slideDown 0.75s ease-in-out 2s normal; }
-
-.js-slide-down-delay-3s {
-  -webkit-animation: slideDown 0.75s ease-in-out 3s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 3s normal;
-  -o-animation: slideDown 0.75s ease-in-out 3s normal;
-  animation: slideDown 0.75s ease-in-out 3s normal; }
 
 @keyframes slideUp {
   0% {

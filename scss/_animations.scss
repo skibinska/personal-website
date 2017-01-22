@@ -17,21 +17,6 @@
   @include animation (slideDown, .75s);
 }
 
-.js-slide-down-delay-1s
-{
-  @include animation (slideDown, .75s, ease-in-out, 1s);
-}
-
-.js-slide-down-delay-2s
-{
-  @include animation (slideDown, .75s, ease-in-out, 2s);
-}
-
-.js-slide-down-delay-3s
-{
-  @include animation (slideDown, .75s, ease-in-out, 3s);
-}
-
 @keyframes slideUp
 {
   0%
