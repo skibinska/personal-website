@@ -22,16 +22,26 @@
 }
 .intro--title
 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
   padding: 100px 0 20px;
+
+  @media screen and (min-width: 768px)
+  {
+    font-size: 4rem;
+  }
 }
 .intro--teaser
 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
+
+  @media screen and (min-width: 768px)
+  {
+    font-size: 2rem;
+  }
 }
 .intro--paragraph
 {
