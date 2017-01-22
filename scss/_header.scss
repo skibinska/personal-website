@@ -1,3 +1,54 @@
-.header {
-  background-color: red;
+@import "variables";
+@import "mixins";
+@import "animations";
+
+.header
+{
+
+}
+.header--logo
+{
+  font-family: $logo-font;
+  float: left;
+
+  .header--title
+  {
+    margin: 0;
+  }
+
+  .header--teaser
+  {
+    margin-top: -10px;
+    margin-left: 35px;
+  }
+}
+.navigation
+{
+  text-align: center;
+  position: relative;
+  top: -100px;
+  height: 0;
+  @include transition (top, .2s);
+
+  &.active
+  {
+    top: 0;
+  }
+
+  .navigation--item
+  {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+
+    &:hover
+    {
+      opacity: 0.6;
+    }
+  }
+
 }
