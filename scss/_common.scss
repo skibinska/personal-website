@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 body
 {
@@ -20,4 +21,19 @@ body
   {
     opacity: 0.6;
   }
+}
+.btn
+{
+  padding: 18px 26px;
+  margin-right: 10px;
+  display: inline-block;
+  border: 2px solid $white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  
+  @include border-radius (3px);
+  @include transition ();
 }
