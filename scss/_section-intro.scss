@@ -8,7 +8,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../images/notebook.jpeg");
+    url("../images/intro/notebook.jpeg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,11 +25,12 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
-  padding: 100px 0 20px;
+  padding: 50px 0 20px;
 
   @media screen and (min-width: 768px)
   {
     font-size: 4rem;
+    padding-top: 100px;
   }
 }
 .intro--teaser
@@ -61,11 +62,5 @@
   {
     margin-top: 2rem;
     width: auto;
-  }
-
-  &:hover
-  {
-    border: 2px solid $pink;
-    color: $pink;
   }
 }

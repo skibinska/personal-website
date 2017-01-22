@@ -56,10 +56,16 @@
     opacity: 1;
     cursor: pointer;
     position: relative;
+    @include transition ();
 
     &:hover
     {
       opacity: 0.6;
+    }
+
+    .style-a
+    {
+      color: $black;
     }
   }
 }
