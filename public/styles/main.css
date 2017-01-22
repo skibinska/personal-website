@@ -31,6 +31,9 @@ body {
   -moz-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s; }
+  .btn:hover {
+    border: 2px solid #f20561;
+    color: #f20561; }
 
 .header {
   height: 100px;
@@ -215,7 +218,7 @@ body {
 .intro--paragraph {
   font-size: 1.2rem; }
   .intro--paragraph .intro--paragraph-pink {
-    color: rgba(242, 5, 97, 0.8); }
+    color: #f20561; }
 
 .btn--intro {
   margin-top: 0.5rem;
@@ -224,9 +227,6 @@ body {
     .btn--intro {
       margin-top: 2rem;
       width: auto; } }
-  .btn--intro:hover {
-    border: 2px solid rgba(242, 5, 97, 0.8);
-    color: rgba(242, 5, 97, 0.8); }
 
 .projects--title {
   font-family: "Open Sans Condensed", sans-serif;
@@ -236,20 +236,38 @@ body {
 .projects--teaser {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
-  margin: 0; }
+  margin: 0;
+  opacity: 0.6; }
 
-.projects--overview {
-  position: relative;
-  height: 538px;
-  margin-top: 50px; }
-
-.project .project--image {
-  height: 300px;
-  width: 50%;
-  margin-bottom: 10px;
-  float: left; }
-.project .project--info {
-  display: inline-block;
-  float: right; }
+.project {
+  margin: 50px 0; }
+  .project .project--image {
+    height: 300px;
+    width: 50%;
+    margin-bottom: 10px; }
+  .project .project--info {
+    display: inline-block;
+    float: right;
+    width: 45%; }
+  .project .project--title {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #f20561;
+    letter-spacing: 2px;
+    margin-top: 0; }
+  .project .project--description {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem; }
+  .project .btn--project {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 0.8rem;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s; }
+    .project .btn--project:hover {
+      border: 2px solid #f20561; }
 
 /*# sourceMappingURL=main.css.map */

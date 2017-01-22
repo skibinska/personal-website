@@ -33,7 +33,13 @@ body
   text-decoration: none;
   color: inherit;
   font-size: 1.2rem;
-  
+
   @include border-radius (3px);
   @include transition ();
+
+  &:hover
+  {
+    border: 2px solid $pink;
+    color: $pink;
+  }
 }
