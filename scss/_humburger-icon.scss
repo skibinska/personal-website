@@ -4,9 +4,11 @@
 {
   width: 40px;
   height: 25px;
+  margin-top: 10px;
   position: relative;
   cursor: pointer;
   float: right;
+  z-index: 1;
   @include rotate (0deg);
   @include transition ();
 
@@ -14,7 +16,7 @@
   {
     display: block;
     position: absolute;
-    height: 6px;
+    height: 4px;
     width: 100%;
     background: black;
     opacity: 1;

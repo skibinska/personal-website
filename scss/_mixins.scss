@@ -26,3 +26,10 @@
   -o-transform-origin: $xAxis $yAxis;
   transform-origin: $xAxis $yAxis;
 }
+@mixin animation ($name, $duration, $timing: ease-in-out, $delay: 0s, $direction: normal)
+{
+  -webkit-animation: $name $duration $timing $delay $direction;
+  -moz-animation: $name $duration $timing $delay $direction;
+  -o-animation: $name $duration $timing $delay $direction;
+  animation: $name $duration $timing $delay $direction;
+}
