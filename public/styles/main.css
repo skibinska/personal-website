@@ -7,6 +7,12 @@ body {
   margin: auto;
   max-width: 1000px; }
 
+.style-a {
+  opacity: 1;
+  text-decoration: none; }
+  .style-a:hover {
+    opacity: 0.6; }
+
 .header {
   height: 100px;
   margin-top: 8px; }
@@ -174,7 +180,9 @@ body {
   font-weight: bold;
   margin: 0; }
 
-.intro-paragraph {
+.intro--paragraph {
   font-size: 1.2rem; }
+  .intro--paragraph .intro--paragraph-pink {
+    color: rgba(242, 5, 97, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

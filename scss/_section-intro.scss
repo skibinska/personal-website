@@ -18,7 +18,7 @@
 .intro
 {
   clear: both;
-  font-family: $intro-font2;
+  font-family: $intro-font;
 }
 .intro--title
 {
@@ -33,7 +33,12 @@
   font-weight: bold;
   margin: 0;
 }
-.intro-paragraph
+.intro--paragraph
 {
   font-size: 1.2rem;
+
+  .intro--paragraph-pink
+  {
+    color: $pink;
+  }
 }
