@@ -1,10 +1,15 @@
+body {
+  margin: 0;
+  font-size: 1rem; }
+
 .container {
   width: 90%;
   margin: auto;
   max-width: 1000px; }
 
 .header {
-  height: 100px; }
+  height: 100px;
+  margin-top: 8px; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -145,16 +150,31 @@
   -o-animation: slideUp 0.75s ease-in-out 0s normal;
   animation: slideUp 0.75s ease-in-out 0s normal; }
 
-.intro {
-  clear: both; }
-
 .parallax {
-  height: 600px;
+  height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/notebook.jpeg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: rgba(255, 255, 255, 0.9); }
+
+.intro {
+  clear: both;
+  font-family: "Josefin Sans", sans-serif; }
+
+.intro--title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 100px 0 20px; }
+
+.intro--teaser {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0; }
+
+.intro-paragraph {
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=main.css.map */
