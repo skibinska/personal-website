@@ -1,8 +1,10 @@
-.header {
-  height: 100px;
+.container {
   width: 90%;
   margin: auto;
   max-width: 1000px; }
+
+.header {
+  height: 100px; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
