@@ -11,6 +11,24 @@
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
   animation: slideDown 0.75s ease-in-out 0s normal; }
 
+.js-slide-down-delay-1s {
+  -webkit-animation: slideDown 0.75s ease-in-out 1s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 1s normal;
+  -o-animation: slideDown 0.75s ease-in-out 1s normal;
+  animation: slideDown 0.75s ease-in-out 1s normal; }
+
+.js-slide-down-delay-2s {
+  -webkit-animation: slideDown 0.75s ease-in-out 2s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 2s normal;
+  -o-animation: slideDown 0.75s ease-in-out 2s normal;
+  animation: slideDown 0.75s ease-in-out 2s normal; }
+
+.js-slide-down-delay-3s {
+  -webkit-animation: slideDown 0.75s ease-in-out 3s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 3s normal;
+  -o-animation: slideDown 0.75s ease-in-out 3s normal;
+  animation: slideDown 0.75s ease-in-out 3s normal; }
+
 @keyframes slideUp {
   0% {
     opacity: 1;
@@ -109,6 +127,24 @@
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
   animation: slideDown 0.75s ease-in-out 0s normal; }
 
+.js-slide-down-delay-1s {
+  -webkit-animation: slideDown 0.75s ease-in-out 1s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 1s normal;
+  -o-animation: slideDown 0.75s ease-in-out 1s normal;
+  animation: slideDown 0.75s ease-in-out 1s normal; }
+
+.js-slide-down-delay-2s {
+  -webkit-animation: slideDown 0.75s ease-in-out 2s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 2s normal;
+  -o-animation: slideDown 0.75s ease-in-out 2s normal;
+  animation: slideDown 0.75s ease-in-out 2s normal; }
+
+.js-slide-down-delay-3s {
+  -webkit-animation: slideDown 0.75s ease-in-out 3s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 3s normal;
+  -o-animation: slideDown 0.75s ease-in-out 3s normal;
+  animation: slideDown 0.75s ease-in-out 3s normal; }
+
 @keyframes slideUp {
   0% {
     opacity: 1;
@@ -145,7 +181,7 @@
   height: 0;
   margin: 60px auto;
   right: 0;
-  left: -36px;
+  left: -60px;
   padding-top: 25px;
   letter-spacing: 2px;
   -webkit-transition: top 0.2s ease-in-out 0s;
@@ -161,7 +197,7 @@
   .navigation .navigation--item {
     list-style-type: none;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
     opacity: 1;
     cursor: pointer;

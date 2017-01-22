@@ -34,7 +34,7 @@
   height: 0;
   margin: 60px auto;
   right: 0;
-  left: -36px;
+  left: -60px;
   padding-top: 25px;
   letter-spacing: 2px;
   @include transition (top, .2s);
@@ -43,7 +43,6 @@
   {
     margin: auto;
     left: 0;
-
   }
 
   &.active
@@ -55,7 +54,7 @@
   {
     list-style-type: none;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
     opacity: 1;
     cursor: pointer;
