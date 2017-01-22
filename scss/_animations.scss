@@ -1,0 +1,39 @@
+@keyframes slideDown
+{
+  0%
+  {
+    opacity: 0;
+    top: -100px;
+  }
+
+  100%
+  {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.slideDown
+{
+  animation: slideDown 2s;
+}
+
+@keyframes slideUp
+{
+  0%
+  {
+    opacity: 1;
+    top: 0;
+  }
+
+  100%
+  {
+    opacity: 0;
+    top: -100px;
+  }
+}
+
+.slideUp
+{
+  animation: slideUp 2s;
+}

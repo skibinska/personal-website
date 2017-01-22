@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins";
+@import "animations";
 
 .header
 {
@@ -23,7 +25,16 @@
 .navigation
 {
   text-align: center;
-  
+  position: relative;
+  top: -100px;
+  height: 0;
+  @include transition (top, .2s);
+
+  &.active
+  {
+    top: 0;
+  }
+
   .navigation--item
   {
     list-style-type: none;
@@ -32,6 +43,7 @@
     font-weight: bold;
     opacity: 1;
     cursor: pointer;
+    position: relative;
 
     &:hover
     {

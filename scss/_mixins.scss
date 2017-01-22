@@ -12,12 +12,12 @@
   -o-transform: rotate($deg);
   transform: rotate($deg);
 }
-@mixin transition ($property, $duration, $timing: ease-in-out)
+@mixin transition ($property: all, $duration: .5s, $timing: ease-in-out, $delay: 0s)
 {
-  -webkit-transition: $property $duration $timing;
-  -moz-transition: $property $duration $timing;
-  -o-transition: $property $duration $timing;
-  transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing $delay;
+  -moz-transition: $property $duration $timing $delay;
+  -o-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
 }
 @mixin transform-origin ($xAxis, $yAxis)
 {

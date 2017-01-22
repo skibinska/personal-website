@@ -8,7 +8,7 @@
   cursor: pointer;
   float: right;
   @include rotate (0deg);
-  @include transition (all, .5s);
+  @include transition ();
 
   .line
   {
@@ -41,7 +41,7 @@
     }
   }
 
-  &.open
+  &.active
   {
     .line
     {
