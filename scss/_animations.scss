@@ -13,7 +13,7 @@
   }
 }
 
-.slideDown
+.js-slide-down
 {
   @include animation (slideDown, .75s);
 }
@@ -33,7 +33,7 @@
   }
 }
 
-.slideUp
+.js-slide-up
 {
   @include animation (slideUp, .75s);
 }
