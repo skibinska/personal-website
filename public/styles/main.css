@@ -149,7 +149,7 @@
 .parallax {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/notebook.jpeg");
-  background-position: center;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
