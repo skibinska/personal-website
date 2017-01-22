@@ -1,7 +1,7 @@
 @import "../node_modules/normalize-scss/sass/normalize";
-@import "variables";
-@import "mixins";
-@import "animations";
-@import "humburger-icon";
+// header
 @import "header";
+@import "humburger-icon";
+@import "header-animations";
+// main content
 @import "section-intro";
