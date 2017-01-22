@@ -5,7 +5,7 @@
   100% {
     opacity: 1;
     top: 0; } }
-.slideDown {
+.js-slide-down {
   -webkit-animation: slideDown 0.75s ease-in-out 0s normal;
   -moz-animation: slideDown 0.75s ease-in-out 0s normal;
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
@@ -18,7 +18,7 @@
   100% {
     opacity: 0;
     top: -100px; } }
-.slideUp {
+.js-slide-up {
   -webkit-animation: slideUp 0.75s ease-in-out 0s normal;
   -moz-animation: slideUp 0.75s ease-in-out 0s normal;
   -o-animation: slideUp 0.75s ease-in-out 0s normal;
@@ -31,6 +31,7 @@
   position: relative;
   cursor: pointer;
   float: right;
+  z-index: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -102,7 +103,7 @@
   100% {
     opacity: 1;
     top: 0; } }
-.slideDown {
+.js-slide-down {
   -webkit-animation: slideDown 0.75s ease-in-out 0s normal;
   -moz-animation: slideDown 0.75s ease-in-out 0s normal;
   -o-animation: slideDown 0.75s ease-in-out 0s normal;
@@ -115,11 +116,17 @@
   100% {
     opacity: 0;
     top: -100px; } }
-.slideUp {
+.js-slide-up {
   -webkit-animation: slideUp 0.75s ease-in-out 0s normal;
   -moz-animation: slideUp 0.75s ease-in-out 0s normal;
   -o-animation: slideUp 0.75s ease-in-out 0s normal;
   animation: slideUp 0.75s ease-in-out 0s normal; }
+
+.header {
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  max-width: 1000px; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -131,14 +138,24 @@
     margin-left: 35px; }
 
 .navigation {
+  font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
-  position: relative;
-  top: -100px;
+  position: absolute;
+  top: -110px;
   height: 0;
+  margin: 60px auto;
+  right: 0;
+  left: -36px;
+  padding-top: 25px;
+  letter-spacing: 2px;
   -webkit-transition: top 0.2s ease-in-out 0s;
   -moz-transition: top 0.2s ease-in-out 0s;
   -o-transition: top 0.2s ease-in-out 0s;
   transition: top 0.2s ease-in-out 0s; }
+  @media screen and (min-width: 768px) {
+    .navigation {
+      margin: auto;
+      left: 0; } }
   .navigation.active {
     top: 0; }
   .navigation .navigation--item {

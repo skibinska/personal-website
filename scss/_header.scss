@@ -4,7 +4,10 @@
 
 .header
 {
-
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
 }
 .header--logo
 {
@@ -24,11 +27,24 @@
 }
 .navigation
 {
+  font-family: $logo-font;
   text-align: center;
-  position: relative;
-  top: -100px;
+  position: absolute;
+  top: -110px;
   height: 0;
+  margin: 60px auto;
+  right: 0;
+  left: -36px;
+  padding-top: 25px;
+  letter-spacing: 2px;
   @include transition (top, .2s);
+
+  @media screen and (min-width: 768px)
+  {
+    margin: auto;
+    left: 0;
+
+  }
 
   &.active
   {
@@ -50,5 +66,4 @@
       opacity: 0.6;
     }
   }
-
 }

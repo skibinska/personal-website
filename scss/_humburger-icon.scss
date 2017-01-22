@@ -8,6 +8,7 @@
   position: relative;
   cursor: pointer;
   float: right;
+  z-index: 1;
   @include rotate (0deg);
   @include transition ();
 
