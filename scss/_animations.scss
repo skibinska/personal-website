@@ -15,7 +15,7 @@
 
 .slideDown
 {
-  animation: slideDown .75s;
+  @include animation (slideDown, .75s);
 }
 
 @keyframes slideUp
@@ -35,5 +35,5 @@
 
 .slideUp
 {
-  animation: slideUp .75s;
+  @include animation (slideUp, .75s);
 }

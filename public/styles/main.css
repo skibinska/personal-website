@@ -6,7 +6,10 @@
     opacity: 1;
     top: 0; } }
 .slideDown {
-  animation: slideDown .75s; }
+  -webkit-animation: slideDown 0.75s ease-in-out 0s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 0s normal;
+  -o-animation: slideDown 0.75s ease-in-out 0s normal;
+  animation: slideDown 0.75s ease-in-out 0s normal; }
 
 @keyframes slideUp {
   0% {
@@ -16,7 +19,10 @@
     opacity: 0;
     top: -100px; } }
 .slideUp {
-  animation: slideUp .75s; }
+  -webkit-animation: slideUp 0.75s ease-in-out 0s normal;
+  -moz-animation: slideUp 0.75s ease-in-out 0s normal;
+  -o-animation: slideUp 0.75s ease-in-out 0s normal;
+  animation: slideUp 0.75s ease-in-out 0s normal; }
 
 .nav--icon {
   width: 40px;
@@ -97,7 +103,10 @@
     opacity: 1;
     top: 0; } }
 .slideDown {
-  animation: slideDown .75s; }
+  -webkit-animation: slideDown 0.75s ease-in-out 0s normal;
+  -moz-animation: slideDown 0.75s ease-in-out 0s normal;
+  -o-animation: slideDown 0.75s ease-in-out 0s normal;
+  animation: slideDown 0.75s ease-in-out 0s normal; }
 
 @keyframes slideUp {
   0% {
@@ -107,7 +116,10 @@
     opacity: 0;
     top: -100px; } }
 .slideUp {
-  animation: slideUp .75s; }
+  -webkit-animation: slideUp 0.75s ease-in-out 0s normal;
+  -moz-animation: slideUp 0.75s ease-in-out 0s normal;
+  -o-animation: slideUp 0.75s ease-in-out 0s normal;
+  animation: slideUp 0.75s ease-in-out 0s normal; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
