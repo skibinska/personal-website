@@ -1,0 +1,44 @@
+@import "variables";
+
+.projects--title
+{
+  font-family: $logo-font;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.projects--teaser
+{
+  font-family: $logo-font;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.projects--overview
+{
+  position: relative;
+  // overflow: hidden;
+  height: 538px;
+  margin-top: 50px;
+}
+.project
+{
+  // width: 348px;
+  // display: block;
+  // position: absolute;
+  // left: 0px;
+  // top: 0px;
+  // transform: translate3d(0px, 0px, 0px);
+  // visibility: visible;
+  //
+  .project--image
+  {
+    height: 300px;
+    width: 50%;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .project--info
+  {
+    display: inline-block;
+    float: right;
+  }
+}
