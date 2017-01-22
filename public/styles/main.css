@@ -148,7 +148,7 @@
 
 .parallax {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/notebook-natural-laptop-macbook-162605.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/notebook.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
