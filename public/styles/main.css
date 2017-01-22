@@ -13,6 +13,25 @@ body {
   .style-a:hover {
     opacity: 0.6; }
 
+.btn {
+  padding: 18px 26px;
+  margin-right: 10px;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+
 .header {
   height: 100px;
   margin-top: 8px; }
@@ -189,6 +208,17 @@ body {
 .intro--paragraph {
   font-size: 1.2rem; }
   .intro--paragraph .intro--paragraph-pink {
+    color: rgba(242, 5, 97, 0.8); }
+
+.btn--intro {
+  margin-top: 0.5rem;
+  width: 80%; }
+  @media screen and (min-width: 768px) {
+    .btn--intro {
+      margin-top: 2rem;
+      width: auto; } }
+  .btn--intro:hover {
+    border: 2px solid rgba(242, 5, 97, 0.8);
     color: rgba(242, 5, 97, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

@@ -52,3 +52,20 @@
     color: $pink;
   }
 }
+.btn--intro
+{
+  margin-top: 0.5rem;
+  width: 80%;
+
+  @media screen and (min-width: 768px)
+  {
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  &:hover
+  {
+    border: 2px solid $pink;
+    color: $pink;
+  }
+}
