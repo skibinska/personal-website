@@ -63,7 +63,7 @@
   -moz-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s; }
-  .nav--icon .line {
+  .nav--icon .nav--line {
     display: block;
     position: absolute;
     height: 4px;
@@ -83,35 +83,35 @@
     -moz-transition: all 0.25s ease-in-out 0s;
     -o-transition: all 0.25s ease-in-out 0s;
     transition: all 0.25s ease-in-out 0s; }
-    .nav--icon .line:nth-child(1) {
+    .nav--icon .nav--line:nth-child(1) {
       top: 0px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-    .nav--icon .line:nth-child(2) {
+    .nav--icon .nav--line:nth-child(2) {
       top: 10px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-    .nav--icon .line:nth-child(3) {
+    .nav--icon .nav--line:nth-child(3) {
       top: 21px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-  .nav--icon.active .line:nth-child(1) {
+  .nav--icon.active .nav--line:nth-child(1) {
     top: -3px;
     left: 8px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .nav--icon.active .line:nth-child(2) {
+  .nav--icon.active .nav--line:nth-child(2) {
     width: 0%;
     opacity: 0; }
-  .nav--icon.active .line:nth-child(3) {
+  .nav--icon.active .nav--line:nth-child(3) {
     top: 26px;
     left: 8px;
     -webkit-transform: rotate(-45deg);
