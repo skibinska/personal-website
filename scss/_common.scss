@@ -1,0 +1,23 @@
+@import "variables";
+
+body
+{
+  margin: 0;
+  font-size: 1rem;
+}
+.container
+{
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+.style-a
+{
+  opacity: 1;
+  text-decoration: none;
+
+  &:hover
+  {
+    opacity: 0.6;
+  }
+}

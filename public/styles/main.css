@@ -1,8 +1,21 @@
-.header {
-  height: 100px;
+body {
+  margin: 0;
+  font-size: 1rem; }
+
+.container {
   width: 90%;
   margin: auto;
   max-width: 1000px; }
+
+.style-a {
+  opacity: 1;
+  text-decoration: none; }
+  .style-a:hover {
+    opacity: 0.6; }
+
+.header {
+  height: 100px;
+  margin-top: 8px; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -61,7 +74,7 @@
   -moz-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s; }
-  .nav--icon .line {
+  .nav--icon .nav--line {
     display: block;
     position: absolute;
     height: 4px;
@@ -81,35 +94,35 @@
     -moz-transition: all 0.25s ease-in-out 0s;
     -o-transition: all 0.25s ease-in-out 0s;
     transition: all 0.25s ease-in-out 0s; }
-    .nav--icon .line:nth-child(1) {
+    .nav--icon .nav--line:nth-child(1) {
       top: 0px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-    .nav--icon .line:nth-child(2) {
+    .nav--icon .nav--line:nth-child(2) {
       top: 10px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-    .nav--icon .line:nth-child(3) {
+    .nav--icon .nav--line:nth-child(3) {
       top: 21px;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-  .nav--icon.active .line:nth-child(1) {
+  .nav--icon.active .nav--line:nth-child(1) {
     top: -3px;
     left: 8px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .nav--icon.active .line:nth-child(2) {
+  .nav--icon.active .nav--line:nth-child(2) {
     width: 0%;
     opacity: 0; }
-  .nav--icon.active .line:nth-child(3) {
+  .nav--icon.active .nav--line:nth-child(3) {
     top: 26px;
     left: 8px;
     -webkit-transform: rotate(-45deg);
@@ -143,16 +156,33 @@
   -o-animation: slideUp 0.75s ease-in-out 0s normal;
   animation: slideUp 0.75s ease-in-out 0s normal; }
 
-.intro {
-  clear: both; }
-
 .parallax {
-  height: 600px;
+  height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/notebook.jpeg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: rgba(255, 255, 255, 0.9); }
+
+.intro {
+  clear: both;
+  font-family: "Josefin Sans", sans-serif; }
+
+.intro--title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 100px 0 20px; }
+
+.intro--teaser {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0; }
+
+.intro--paragraph {
+  font-size: 1.2rem; }
+  .intro--paragraph .intro--paragraph-pink {
+    color: rgba(242, 5, 97, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,8 @@
-.intro
-{
-  clear: both;
-}
+@import "variables";
 
 .parallax
 {
-  height: 600px;
+  height: 500px;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.2),
@@ -16,5 +13,32 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: rgba(255, 255, 255, .9);
+  color: $white;
+}
+.intro
+{
+  clear: both;
+  font-family: $intro-font;
+}
+.intro--title
+{
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 100px 0 20px;
+}
+.intro--teaser
+{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+.intro--paragraph
+{
+  font-size: 1.2rem;
+
+  .intro--paragraph-pink
+  {
+    color: $pink;
+  }
 }

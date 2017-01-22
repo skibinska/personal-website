@@ -12,7 +12,7 @@
   @include rotate (0deg);
   @include transition ();
 
-  .line
+  .nav--line
   {
     display: block;
     position: absolute;
@@ -45,7 +45,7 @@
 
   &.active
   {
-    .line
+    .nav--line
     {
       &:nth-child(1)
       {
