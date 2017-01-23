@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .projects--title
 {
@@ -66,5 +67,14 @@
     {
       border: 2px solid $pink;
     }
+  }
+  .btn--technology
+  {
+    padding: 5px;
+    color: $white;
+    background-color: $pink;
+    font-size: 0.9rem;
+    margin: 0;
+    @include border-radius (3px);
   }
 }
