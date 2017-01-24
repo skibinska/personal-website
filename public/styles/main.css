@@ -35,6 +35,12 @@ body {
     border: 2px solid #f20561;
     color: #f20561; }
 
+.mobile-center {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .mobile-center {
+      text-align: left; } }
+
 .header {
   height: 100px;
   margin-top: 8px; }
@@ -272,11 +278,7 @@ body {
     font-size: 1.7rem;
     color: #f20561;
     letter-spacing: 2px;
-    margin-top: 0;
-    text-align: center; }
-    @media screen and (min-width: 768px) {
-      .project .project--title {
-        text-align: left; } }
+    margin-top: 0; }
   .project .project--description {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem; }
