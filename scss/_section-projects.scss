@@ -68,12 +68,16 @@
       border: 2px solid $pink;
     }
   }
-  .btn--technology
+  .project--labels {
+    padding: 0;
+  }
+  .label
   {
+    display: inline-block;
     padding: 5px;
     color: $white;
-    background-color: $pink;
     font-size: 0.9rem;
+    background-color: $pink;
     margin: 0;
     @include border-radius (3px);
   }

@@ -269,11 +269,14 @@ body {
     transition: all 0.5s ease-in-out 0s; }
     .project .btn--project:hover {
       border: 2px solid #f20561; }
-  .project .btn--technology {
+  .project .project--labels {
+    padding: 0; }
+  .project .label {
+    display: inline-block;
     padding: 5px;
     color: rgba(255, 255, 255, 0.9);
-    background-color: #f20561;
     font-size: 0.9rem;
+    background-color: #f20561;
     margin: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
