@@ -60,11 +60,13 @@
   .project--info
   {
     display: inline-block;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 768px)
     {
       width: 45%;
       float: right;
+      margin-bottom: 0;
     }
   }
   .project--title
@@ -79,10 +81,15 @@
     @media screen and (min-width: 768px)
     {
       position: absolute;
-      right: -48px;
+      width: 50%;
       margin: 0 auto;
       text-align: left;
-      width: 50%;
+      right: -35px;
+    }
+
+    @media screen and (min-width: 1024px)
+    {
+      right: -48px;
     }
   }
   .project--description
@@ -91,6 +98,11 @@
     font-size: 1.5rem;
 
     @media screen and (min-width: 768px)
+    {
+      margin-top: 50px;
+    }
+
+    @media screen and (min-width: 1024px)
     {
       margin-top: 70px;
     }

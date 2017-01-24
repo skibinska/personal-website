@@ -272,11 +272,13 @@ body {
         width: 50%;
         height: 300px; } }
   .project .project--info {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
       .project .project--info {
         width: 45%;
-        float: right; } }
+        float: right;
+        margin-bottom: 0; } }
   .project .project--title {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
@@ -287,14 +289,20 @@ body {
     @media screen and (min-width: 768px) {
       .project .project--title {
         position: absolute;
-        right: -48px;
+        width: 50%;
         margin: 0 auto;
         text-align: left;
-        width: 50%; } }
+        right: -35px; } }
+    @media screen and (min-width: 1024px) {
+      .project .project--title {
+        right: -48px; } }
   .project .project--description {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem; }
     @media screen and (min-width: 768px) {
+      .project .project--description {
+        margin-top: 50px; } }
+    @media screen and (min-width: 1024px) {
       .project .project--description {
         margin-top: 70px; } }
   .project .btn--project {
