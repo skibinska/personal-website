@@ -239,16 +239,30 @@ body {
   margin: 0;
   opacity: 0.6; }
 
-.project {
+.projects--overview {
   margin: 50px 0; }
+
+.project {
+  margin-bottom: 40px; }
   .project .project--image {
-    height: 300px;
-    width: 50%;
-    margin-bottom: 10px; }
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0 9px 15px #888888;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    @media screen and (min-width: 768px) {
+      .project .project--image {
+        width: 50%;
+        height: 300px; } }
   .project .project--info {
-    display: inline-block;
-    float: right;
-    width: 45%; }
+    display: inline-block; }
+    @media screen and (min-width: 768px) {
+      .project .project--info {
+        width: 45%;
+        float: right; } }
   .project .project--title {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
@@ -277,7 +291,7 @@ body {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.9rem;
     background-color: #f20561;
-    margin: 0;
+    margin-bottom: 5px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
