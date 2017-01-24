@@ -247,6 +247,8 @@ body {
 
 .projects--overview {
   margin: 50px 0; }
+  .projects--overview .project:last-child {
+    border-bottom: none; }
 
 .project {
   margin-bottom: 25px;

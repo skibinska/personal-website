@@ -19,6 +19,11 @@
   margin: 50px 0;
   // position: relative;
   // height: 538px;
+  
+  .project:last-child
+  {
+    border-bottom: none;
+  }
 }
 .project
 {
@@ -31,7 +36,6 @@
   // top: 0px;
   // transform: translate3d(0px, 0px, 0px);
   // visibility: visible;
-  //
 
   @media screen and (min-width: 768px)
   {
