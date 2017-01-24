@@ -246,7 +246,8 @@ body {
   opacity: 0.6; }
 
 .projects--overview {
-  margin: 50px 0; }
+  margin: 50px 0;
+  position: relative; }
   .projects--overview .project:last-child {
     border-bottom: none; }
 
@@ -283,9 +284,19 @@ body {
     color: #f20561;
     letter-spacing: 2px;
     margin-top: 0; }
+    @media screen and (min-width: 768px) {
+      .project .project--title {
+        position: absolute;
+        right: -48px;
+        margin: 0 auto;
+        text-align: left;
+        width: 50%; } }
   .project .project--description {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .project .project--description {
+        margin-top: 70px; } }
   .project .btn--project {
     border: 2px solid black;
     padding: 10px;
