@@ -272,7 +272,11 @@ body {
     font-size: 1.7rem;
     color: #f20561;
     letter-spacing: 2px;
-    margin-top: 0; }
+    margin-top: 0;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .project .project--title {
+        text-align: left; } }
   .project .project--description {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem; }
