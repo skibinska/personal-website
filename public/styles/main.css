@@ -329,4 +329,28 @@ body {
     -ms-border-radius: 3px;
     border-radius: 3px; }
 
+.footer {
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #f3f3f3;
+  height: 100px; }
+
+.footer__content {
+  padding-top: 10px; }
+
+.footer__copywrite {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 1.5px; }
+
+.footer__social-buttons {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: black; }
+
+.footer__social-button {
+  display: inline-block;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=main.css.map */
