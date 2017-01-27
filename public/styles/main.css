@@ -9,9 +9,27 @@ body {
 
 .style-a {
   opacity: 1;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
   .style-a:hover {
     opacity: 0.6; }
+
+.title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0; }
+
+.teaser {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.6; }
+  @media screen and (min-width: 768px) {
+    .teaser {
+      font-size: 1.5rem; } }
 
 .btn {
   padding: 18px 26px;
@@ -234,17 +252,6 @@ body {
       margin-top: 2rem;
       width: auto; } }
 
-.projects--title {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 3rem;
-  margin-bottom: 0; }
-
-.projects--teaser {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.5rem;
-  margin: 0;
-  opacity: 0.6; }
-
 .projects--overview {
   margin: 50px 0;
   position: relative; }
@@ -328,6 +335,16 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
+
+.contact__mail {
+  color: #f20561;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .contact__mail {
+      font-size: 1.6rem; } }
 
 .footer {
   font-family: "Open Sans Condensed", sans-serif;
