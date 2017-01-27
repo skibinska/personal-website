@@ -9,9 +9,27 @@ body {
 
 .style-a {
   opacity: 1;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
   .style-a:hover {
     opacity: 0.6; }
+
+.title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0; }
+
+.teaser {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.6; }
+  @media screen and (min-width: 768px) {
+    .teaser {
+      font-size: 1.5rem; } }
 
 .btn {
   padding: 18px 26px;
@@ -191,17 +209,20 @@ body {
   animation: slideUp 0.75s ease-in-out 0s normal; }
 
 .parallax {
-  height: 500px;
+  height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/intro/notebook.jpeg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  color: rgba(255, 255, 255, 0.9); }
+  background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .parallax {
+      height: 500px; } }
 
 .intro {
   clear: both;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.9); }
 
 .intro--title {
   font-size: 2.5rem;
@@ -222,7 +243,12 @@ body {
       font-size: 2rem; } }
 
 .intro--paragraph {
-  font-size: 1.2rem; }
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+  @media screen and (min-width: 768px) {
+    .intro--paragraph {
+      line-height: 2rem; } }
   .intro--paragraph .intro--paragraph-pink {
     color: #f20561; }
 
@@ -234,22 +260,14 @@ body {
       margin-top: 2rem;
       width: auto; } }
 
-.projects--title {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 3rem;
-  margin-bottom: 0; }
-
-.projects--teaser {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.5rem;
-  margin: 0;
-  opacity: 0.6; }
-
 .projects--overview {
-  margin: 50px 0;
+  margin: 20px 0;
   position: relative; }
-  .projects--overview .project:last-child {
-    border-bottom: none; }
+  @media screen and (min-width: 768px) {
+    .projects--overview {
+      margin: 50px 0; }
+      .projects--overview .project:last-child {
+        border-bottom: none; } }
 
 .project {
   margin-bottom: 25px;
@@ -328,6 +346,20 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
+
+.contact .title {
+  margin-top: 0; }
+
+.contact__mail {
+  color: #f20561;
+  font-size: 1.3rem;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  @media screen and (min-width: 768px) {
+    .contact__mail {
+      font-size: 1.6rem; } }
 
 .footer {
   font-family: "Open Sans Condensed", sans-serif;
