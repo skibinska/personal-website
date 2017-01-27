@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+
+.contact__mail
+{
+  color: $pink;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+
+  @media screen and (min-width: 768px)
+  {
+    font-size: 1.6rem;
+  }
+}
