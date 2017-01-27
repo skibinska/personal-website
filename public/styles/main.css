@@ -20,7 +20,7 @@ body {
 .title {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 3rem;
-  margin-bottom: 0; }
+  margin: 0; }
 
 .teaser {
   font-family: "Open Sans Condensed", sans-serif;
@@ -60,8 +60,22 @@ body {
       text-align: left; } }
 
 .header {
-  height: 100px;
-  margin-top: 8px; }
+  width: 100%;
+  z-index: 10; }
+
+.header--default {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px; }
+
+.js-header--fixed {
+  position: fixed;
+  color: black;
+  box-shadow: 0 2px 10px #f3f3f3;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 70px; }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -117,7 +131,6 @@ body {
   position: relative;
   cursor: pointer;
   float: right;
-  z-index: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -259,6 +272,9 @@ body {
     .btn--intro {
       margin-top: 2rem;
       width: auto; } }
+
+.projects {
+  margin-top: 50px; }
 
 .projects--overview {
   margin: 20px 0;
