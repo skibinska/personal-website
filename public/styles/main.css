@@ -20,7 +20,7 @@ body {
 .title {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 3rem;
-  margin-bottom: 0; }
+  margin: 0; }
 
 .teaser {
   font-family: "Open Sans Condensed", sans-serif;
@@ -60,8 +60,17 @@ body {
       text-align: left; } }
 
 .header {
-  height: 100px;
-  margin-top: 8px; }
+  height: 80px;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 10; }
+
+.js-header--fixed {
+  position: fixed;
+  height: 70px;
+  color: black;
+  box-shadow: 0 2px 10px #f3f3f3;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -117,7 +126,6 @@ body {
   position: relative;
   cursor: pointer;
   float: right;
-  z-index: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -260,6 +268,9 @@ body {
       margin-top: 2rem;
       width: auto; } }
 
+.projects {
+  margin-top: 50px; }
+
 .projects--overview {
   margin: 20px 0;
   position: relative; }
@@ -346,9 +357,6 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
-
-.contact .title {
-  margin-top: 0; }
 
 .contact__mail {
   color: #f20561;

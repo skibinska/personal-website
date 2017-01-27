@@ -3,8 +3,18 @@
 
 .header
 {
-  height: 100px;
-  margin-top: 8px;
+  height: 80px;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 10;
+}
+.js-header--fixed
+{
+  position: fixed;
+  height: 70px;
+  color: $black;
+  box-shadow: 0 2px 10px $light-grey;
+  background-color: $white;
 }
 .header--logo
 {
