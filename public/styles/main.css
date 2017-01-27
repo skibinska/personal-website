@@ -261,10 +261,13 @@ body {
       width: auto; } }
 
 .projects--overview {
-  margin: 50px 0;
+  margin: 20px 0;
   position: relative; }
-  .projects--overview .project:last-child {
-    border-bottom: none; }
+  @media screen and (min-width: 768px) {
+    .projects--overview {
+      margin: 50px 0; }
+      .projects--overview .project:last-child {
+        border-bottom: none; } }
 
 .project {
   margin-bottom: 25px;
@@ -344,12 +347,16 @@ body {
     -ms-border-radius: 3px;
     border-radius: 3px; }
 
+.contact .title {
+  margin-top: 0; }
+
 .contact__mail {
   color: #f20561;
   font-size: 1.3rem;
   display: inline-block;
-  margin: 20px 0;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }
   @media screen and (min-width: 768px) {
     .contact__mail {
       font-size: 1.6rem; } }

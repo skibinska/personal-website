@@ -3,13 +3,18 @@
 
 .projects--overview
 {
-  margin: 50px 0;
+  margin: 20px 0;
   position: relative;
   // height: 538px;
 
-  .project:last-child
+  @media screen and (min-width: 768px)
   {
-    border-bottom: none;
+      margin: 50px 0;
+
+    .project:last-child
+    {
+      border-bottom: none;
+    }
   }
 }
 .project
