@@ -60,22 +60,21 @@ body {
       text-align: left; } }
 
 .header {
+  height: 80px;
   width: 100%;
-  z-index: 10; }
-
-.header--default {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px; }
+  padding-top: 10px;
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
 
 .js-header--fixed {
   position: fixed;
+  height: 70px;
   color: black;
   box-shadow: 0 2px 10px #f3f3f3;
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 70px; }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .header--logo {
   font-family: "Open Sans Condensed", sans-serif;
