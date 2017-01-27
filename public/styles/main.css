@@ -209,13 +209,16 @@ body {
   animation: slideUp 0.75s ease-in-out 0s normal; }
 
 .parallax {
-  height: 500px;
+  height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/intro/notebook.jpeg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: rgba(255, 255, 255, 0.9); }
+  @media screen and (min-width: 768px) {
+    .parallax {
+      height: 500px; } }
 
 .intro {
   clear: both;
@@ -240,7 +243,11 @@ body {
       font-size: 2rem; } }
 
 .intro--paragraph {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+  @media screen and (min-width: 768px) {
+    .intro--paragraph {
+      line-height: 2rem; } }
   .intro--paragraph .intro--paragraph-pink {
     color: #f20561; }
 
