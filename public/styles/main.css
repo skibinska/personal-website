@@ -363,9 +363,6 @@ body {
     -ms-border-radius: 3px;
     border-radius: 3px; }
 
-.contact .title {
-  margin-top: 0; }
-
 .contact__mail {
   color: #f20561;
   font-size: 1.3rem;
