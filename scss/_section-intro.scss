@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: $white;
 
   @media screen and (min-width: 768px)
   {
@@ -24,6 +23,8 @@
 {
   clear: both;
   font-family: $intro-font;
+  color: $white;
+
 }
 .intro--title
 {
@@ -51,9 +52,10 @@
 }
 .intro--paragraph
 {
+  color: $dark-white;
   font-size: 1.2rem;
-
   line-height: 1.8rem;
+
   @media screen and (min-width: 768px)
   {
     line-height: 2rem;
