@@ -63,7 +63,12 @@ body {
   height: 80px;
   width: 100%;
   padding-top: 10px;
-  z-index: 10; }
+  z-index: 10;
+  padding-bottom: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
 
 .js-header--fixed {
   position: fixed;
