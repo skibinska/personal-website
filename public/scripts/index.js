@@ -60,6 +60,6 @@
   navIcon.addEventListener('click', toggleClass);
   window.addEventListener('scroll', toggleFixedHeader);
   addListenerToSelector('.intro--paragraph-pink');
-  addListenerToSelector('.btn--intro');
+  addListenerToSelector('.btn__intro-projects');
   window.onload = addListenerToSelector('.navigation--item a');
 })();
