@@ -32,15 +32,15 @@ body {
       font-size: 1.5rem; } }
 
 .btn {
+  display: inline-block;
   padding: 18px 26px;
   margin-right: 10px;
-  display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0.9);
+  color: inherit;
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: inherit;
-  font-size: 1.2rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
