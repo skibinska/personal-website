@@ -58,7 +58,14 @@
       scroll(element, toPosition, duration - 10);
     }, 10);
   }
-
+  document.querySelector('.intro--paragraph-pink').addEventListener('click', function (e) {
+    e.preventDefault();
+    scroll(document.body, document.querySelector('#contact').offsetTop, 500);
+  });
+  document.querySelector('.btn--intro').addEventListener('click', function (e) {
+    e.preventDefault();
+    scroll(document.body, document.querySelector('#projects').offsetTop, 500);
+  });
   navIcon.addEventListener('click', toggleClass);
   window.addEventListener('scroll', toggleFixedHeader);
   window.onload = addListenersToNavLinks;
