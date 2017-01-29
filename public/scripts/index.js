@@ -36,16 +36,15 @@
       intro.style.paddingTop = '0px';
     }
   }
-  function addListenersToNavLinks () {
-    var navLinks = document.querySelectorAll('.navigation--item a');
-    Array.apply(null, navLinks).forEach(function (link) {
-      link.addEventListener('click', function (e) {
+  function addListenerToSelector (selector) {
+    var arrayOfElements = document.querySelectorAll(selector);
+    Array.apply(null, arrayOfElements).forEach(function (element) {
+      element.addEventListener('click', function (e) {
         e.preventDefault();
-        /* Get id name without # for each link */
-        var target = document.getElementById(link.getAttribute('href').slice(1));
+        var target = document.getElementById(element.getAttribute('href').slice(1));
         /* Check if the browser is Firefox, in which case documentElement is used to select the html document */
-        var element = navigator.userAgent.indexOf('Firefox') > -1 ? document.documentElement : document.body;
-        scroll(element, target.offsetTop, 500);
+        var body = navigator.userAgent.indexOf('Firefox') > -1 ? document.documentElement : document.body;
+        scroll(body, target.offsetTop, 500);
       });
     });
   }
@@ -58,15 +57,9 @@
       scroll(element, toPosition, duration - 10);
     }, 10);
   }
-  document.querySelector('.intro--paragraph-pink').addEventListener('click', function (e) {
-    e.preventDefault();
-    scroll(document.body, document.querySelector('#contact').offsetTop, 500);
-  });
-  document.querySelector('.btn--intro').addEventListener('click', function (e) {
-    e.preventDefault();
-    scroll(document.body, document.querySelector('#projects').offsetTop, 500);
-  });
   navIcon.addEventListener('click', toggleClass);
   window.addEventListener('scroll', toggleFixedHeader);
-  window.onload = addListenersToNavLinks;
+  addListenerToSelector('.intro--paragraph-pink');
+  addListenerToSelector('.btn--intro');
+  window.onload = addListenerToSelector('.navigation--item a');
 })();
