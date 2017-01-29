@@ -8,7 +8,7 @@
   position: relative;
   cursor: pointer;
   float: right;
-  @include rotate (0deg);
+  @include rotate (0);
   @include transition ();
 
   .nav__line
@@ -21,7 +21,7 @@
     opacity: 1;
     left: 0;
     @include border-radius (9px);
-    @include rotate (0deg);
+    @include rotate (0);
     @include transition (all, .25s);
 
     &:nth-child(1)
@@ -50,7 +50,7 @@
       {
         top: -3px;
         left: 8px;
-        @include rotate (45deg);
+        @include rotate (45);
       }
 
       &:nth-child(2)
@@ -63,7 +63,7 @@
       {
         top: 26px;
         left: 8px;
-        @include rotate (-45deg);
+        @include rotate (-45);
       }
     }
   }

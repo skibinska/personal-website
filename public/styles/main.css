@@ -131,11 +131,11 @@ body {
   position: relative;
   cursor: pointer;
   float: right;
-  -moz-transform: rotate(0degdeg);
-  -o-transform: rotate(0degdeg);
-  -ms-transform: rotate(0degdeg);
-  -webkit-transform: rotate(0degdeg);
-  transform: rotate(0degdeg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-transition: all 0.5s ease-in-out 0s;
   -moz-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -152,11 +152,11 @@ body {
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     border-radius: 9px;
-    -moz-transform: rotate(0degdeg);
-    -o-transform: rotate(0degdeg);
-    -ms-transform: rotate(0degdeg);
-    -webkit-transform: rotate(0degdeg);
-    transform: rotate(0degdeg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transition: all 0.25s ease-in-out 0s;
     -moz-transition: all 0.25s ease-in-out 0s;
     -o-transition: all 0.25s ease-in-out 0s;
@@ -182,22 +182,22 @@ body {
   .nav__icon.active .nav__line:nth-child(1) {
     top: -3px;
     left: 8px;
-    -moz-transform: rotate(45degdeg);
-    -o-transform: rotate(45degdeg);
-    -ms-transform: rotate(45degdeg);
-    -webkit-transform: rotate(45degdeg);
-    transform: rotate(45degdeg); }
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
   .nav__icon.active .nav__line:nth-child(2) {
     width: 0%;
     opacity: 0; }
   .nav__icon.active .nav__line:nth-child(3) {
     top: 26px;
     left: 8px;
-    -moz-transform: rotate(-45degdeg);
-    -o-transform: rotate(-45degdeg);
-    -ms-transform: rotate(-45degdeg);
-    -webkit-transform: rotate(-45degdeg);
-    transform: rotate(-45degdeg); }
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 @-webkit-keyframes slide-down {
   0% {
