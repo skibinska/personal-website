@@ -1,37 +1,43 @@
-@keyframes slideDown
-{
-  0%
-  {
-    opacity: 0;
-    top: -100px;
-  }
-  100%
-  {
-    opacity: 1;
-    top: 0;
-  }
+@-webkit-keyframes slide-down {
+  0%   { opacity: 0; top: -100px; }
+  100% { opacity: 1; top: 0; }
+}
+@-moz-keyframes slide-down {
+  0%   { opacity: 0; top: -100px; }
+  100% { opacity: 1; top: 0; }
+}
+@-o-keyframes slide-down {
+  0%   { opacity: 0; top: -100px;}
+  100% { opacity: 1; top: 0; }
+}
+@keyframes slide-down {
+  0%   { opacity: 0; top: -100px;}
+  100% { opacity: 1; top: 0; }
 }
 
 .js-slide-down
 {
-  @include animation (slideDown, .75s);
+  @include animation (slide-down, .75s);
 }
 
-@keyframes slideUp
-{
-  0%
-  {
-    opacity: 1;
-    top: 0;
-  }
-  100%
-  {
-    opacity: 0;
-    top: -100px;
-  }
+@-webkit-keyframes slide-up {
+  0%   { opacity: 0; top: 0; }
+  100% { opacity: 1; top: -100px; }
+}
+@-moz-keyframes slide-up {
+  0%   { opacity: 0; top: 0; }
+  100% { opacity: 1; top: -100px; }
+}
+@-o-keyframes slide-up {
+  0%   { opacity: 0; top: 0; }
+  100% { opacity: 1; top: -100px; }
+}
+@keyframes slide-up {
+  0%   { opacity: 0; top: 0; }
+  100% { opacity: 1; top: -100px; }
 }
 
 .js-slide-up
 {
-  @include animation (slideUp, .75s);
+  @include animation (slide-up, .75s);
 }

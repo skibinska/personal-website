@@ -195,7 +195,28 @@ body {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
-@keyframes slideDown {
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    top: -100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 0;
+    top: -100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+@-o-keyframes slide-down {
+  0% {
+    opacity: 0;
+    top: -100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+@keyframes slide-down {
   0% {
     opacity: 0;
     top: -100px; }
@@ -203,23 +224,44 @@ body {
     opacity: 1;
     top: 0; } }
 .js-slide-down {
-  -webkit-animation: slideDown 0.75s ease-in-out 0s normal;
-  -moz-animation: slideDown 0.75s ease-in-out 0s normal;
-  -o-animation: slideDown 0.75s ease-in-out 0s normal;
-  animation: slideDown 0.75s ease-in-out 0s normal; }
+  -webkit-animation: slide-down 0.75s ease-in-out 0s normal;
+  -moz-animation: slide-down 0.75s ease-in-out 0s normal;
+  -o-animation: slide-down 0.75s ease-in-out 0s normal;
+  animation: slide-down 0.75s ease-in-out 0s normal; }
 
-@keyframes slideUp {
+@-webkit-keyframes slide-up {
   0% {
-    opacity: 1;
+    opacity: 0;
     top: 0; }
   100% {
+    opacity: 1;
+    top: -100px; } }
+@-moz-keyframes slide-up {
+  0% {
     opacity: 0;
+    top: 0; }
+  100% {
+    opacity: 1;
+    top: -100px; } }
+@-o-keyframes slide-up {
+  0% {
+    opacity: 0;
+    top: 0; }
+  100% {
+    opacity: 1;
+    top: -100px; } }
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    top: 0; }
+  100% {
+    opacity: 1;
     top: -100px; } }
 .js-slide-up {
-  -webkit-animation: slideUp 0.75s ease-in-out 0s normal;
-  -moz-animation: slideUp 0.75s ease-in-out 0s normal;
-  -o-animation: slideUp 0.75s ease-in-out 0s normal;
-  animation: slideUp 0.75s ease-in-out 0s normal; }
+  -webkit-animation: slide-up 0.75s ease-in-out 0s normal;
+  -moz-animation: slide-up 0.75s ease-in-out 0s normal;
+  -o-animation: slide-up 0.75s ease-in-out 0s normal;
+  animation: slide-up 0.75s ease-in-out 0s normal; }
 
 .parallax {
   height: 600px;
