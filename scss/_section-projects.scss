@@ -5,11 +5,10 @@
 {
   margin-top: 50px;
 }
-.projects--overview
+.projects__overview
 {
   margin: 20px 0;
   position: relative;
-  // height: 538px;
 
   @media screen and (min-width: 768px)
   {
@@ -25,13 +24,6 @@
 {
   margin-bottom: 25px;
   border-bottom: 1px solid $light-grey;
-  // width: 348px;
-  // display: block;
-  // position: absolute;
-  // left: 0px;
-  // top: 0px;
-  // transform: translate3d(0px, 0px, 0px);
-  // visibility: visible;
 
   @media screen and (min-width: 768px)
   {
@@ -39,7 +31,7 @@
     border-bottom: none;
   }
 
-  .project--image
+  .project__image
   {
     width: 100%;
     height: 200px;
@@ -53,7 +45,7 @@
       height: 300px;
     }
   }
-  .project--info
+  .project__info
   {
     display: inline-block;
     margin-bottom: 20px;
@@ -65,11 +57,14 @@
       margin-bottom: 0;
     }
   }
-  .project--title
+  .project__title
   {
-    font-family: $logo-font;
-    font-weight: bold;
-    font-size: 1.7rem;
+    font:
+    {
+      family: $logo-font;
+      weight: bold;
+      size: 1.7rem;
+    }
     color: $pink;
     letter-spacing: 2px;
     margin-top: 0;
@@ -81,29 +76,32 @@
       margin: 0 auto;
       text-align: left;
       right: -35px;
-    }
 
-    @media screen and (min-width: 1024px)
-    {
-      right: -48px;
+      @media screen and (min-width: 1024px)
+      {
+        right: -48px;
+      }
     }
   }
-  .project--description
+  .project__description
   {
-    font-family: $intro-font;
-    font-size: 1.5rem;
+    font:
+    {
+      family: $intro-font;
+      size: 1.5rem;
+    }
 
     @media screen and (min-width: 768px)
     {
       margin-top: 50px;
-    }
 
-    @media screen and (min-width: 1024px)
-    {
-      margin-top: 70px;
+      @media screen and (min-width: 1024px)
+      {
+        margin-top: 70px;
+      }
     }
   }
-  .btn--project
+  .btn__project
   {
     border: 2px solid $black;
     padding: 10px;
@@ -115,7 +113,7 @@
       border: 2px solid $pink;
     }
   }
-  .project--labels {
+  .project__labels {
     padding: 0;
   }
   .label

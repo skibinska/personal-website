@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var navIcon = document.querySelector('.nav--icon');
+  var navIcon = document.querySelector('.nav__icon');
   var header = document.querySelector('.header');
   var toggleClass = function () {
     var navigation = document.querySelector('.navigation');
@@ -59,7 +59,7 @@
   }
   navIcon.addEventListener('click', toggleClass);
   window.addEventListener('scroll', toggleFixedHeader);
-  addListenerToSelector('.intro--paragraph-pink');
+  addListenerToSelector('.intro__paragraph-pink');
   addListenerToSelector('.btn__intro-projects');
-  window.onload = addListenerToSelector('.navigation--item a');
+  window.onload = addListenerToSelector('.navigation__item a');
 })();

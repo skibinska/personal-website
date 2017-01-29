@@ -1,6 +1,6 @@
 @import "mixins";
 
-.nav--icon
+.nav__icon
 {
   width: 40px;
   height: 25px;
@@ -8,11 +8,10 @@
   position: relative;
   cursor: pointer;
   float: right;
-
   @include rotate (0deg);
   @include transition ();
 
-  .nav--line
+  .nav__line
   {
     display: block;
     position: absolute;
@@ -45,7 +44,7 @@
 
   &.active
   {
-    .nav--line
+    .nav__line
     {
       &:nth-child(1)
       {

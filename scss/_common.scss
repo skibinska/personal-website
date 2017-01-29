@@ -31,8 +31,11 @@ body
 }
 .teaser
 {
-  font-family: $logo-font;
-  font-size: 1.3rem;
+  font:
+  {
+    family: $logo-font;
+    size: 1.3rem;
+  }
   margin: 0;
   opacity: 0.6;
   @media screen and (min-width: 768px)
@@ -42,16 +45,18 @@ body
 }
 .btn
 {
+  display: inline-block;
   padding: 18px 26px;
   margin-right: 10px;
-  display: inline-block;
   border: 2px solid $white;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
   color: inherit;
   font-size: 1.2rem;
-
+  text:
+  {
+    transform: uppercase;
+    align: center;
+    decoration: none;
+  }
   @include border-radius (3px);
   @include transition ();
 
