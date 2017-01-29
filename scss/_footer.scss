@@ -27,10 +27,19 @@
 .footer__social-button
 {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 1.3rem;
+  @include transition ();
+
+  &:hover
+  {
+    @include scale (1.2);
+    @include transform-origin (50%, 70%);
+  }
+
   a
   {
     color: $black;
+
   }
 }

@@ -5,12 +5,21 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+@mixin transform($transforms)
+{
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
 @mixin rotate ($deg)
 {
-  -webkit-transform: rotate($deg);
-  -moz-transform: rotate($deg);
-  -o-transform: rotate($deg);
-  transform: rotate($deg);
+  @include transform(rotate(#{$deg}deg));
+}
+@mixin scale($scale)
+{
+	 @include transform(scale($scale));
 }
 @mixin transition ($property: all, $duration: .5s, $timing: ease-in-out, $delay: 0s)
 {
