@@ -21,7 +21,7 @@
       header.style.paddingBottom = '0px';
     }
   }.bind(navIcon);
-  var toggleFixedHeader = function () {
+  function toggleFixedHeader () {
     var parallax = document.querySelector('.parallax');
     var intro = document.querySelector('.intro');
     var parallaxHeight = parallax.offsetHeight;
@@ -35,7 +35,31 @@
       header.classList.add('js-slide-up');
       intro.style.paddingTop = '0px';
     }
-  };
+  }
+  function addListenersToNavLinks () {
+    var navLinks = document.querySelectorAll('.navigation--item a');
+    Array.apply(null, navLinks).forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        /* Get id name without # for each link */
+        var target = document.getElementById(link.getAttribute('href').slice(1));
+        /* Check if the browser is Firefox, in which case documentElement is used to select the html document */
+        var element = navigator.userAgent.indexOf('Firefox') > -1 ? document.documentElement : document.body;
+        scroll(element, target.offsetTop, 500);
+      });
+    });
+  }
+  function scroll (element, toPosition, duration) {
+    if (duration <= 0) { return; }
+    var distance = toPosition - element.scrollTop;
+    var tick = distance / duration * 10;
+    setTimeout(function () {
+      element.scrollTop += tick;
+      scroll(element, toPosition, duration - 10);
+    }, 10);
+  }
+
   navIcon.addEventListener('click', toggleClass);
   window.addEventListener('scroll', toggleFixedHeader);
+  window.onload = addListenersToNavLinks;
 })();

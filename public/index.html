@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ewelina Skibinska</title>
+
   <script src="https://use.fontawesome.com/b47cf7f5d9.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Josefin+Sans:300,400">
   <link rel="stylesheet" href="styles/main.css">
+
+  <title>Ewelina Skibinska | Junior Front-end Web developer | Portfolio | Contact</title>
 </head>
 <body>
-  <header class="header">
+  <header id="home" class="header">
     <div class="container">
       <div class="header--logo">
         <h1 class="header--title">EWELINA SKIBINSKA</h1>
@@ -22,13 +24,14 @@
           <span class="nav--line"></span>
         </div>
         <ul class="navigation">
-          <li class="navigation--item"><a href="#" class="style-a">HOME</a></li>
+          <li class="navigation--item"><a href="#home" class="style-a">HOME</a></li>
           <li class="navigation--item"><a href="#projects" class="style-a">PROJECTS</a></li>
           <li class="navigation--item"><a href="#contact" class="style-a">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <div class="intro parallax">
     <div class="container">
       <p class="intro--title">Hello, my name is Ewelina.</p>
@@ -41,85 +44,93 @@
       <a class="btn btn--intro" href="http://ewelina.skibinska.co.uk/#/" target="_blank">Download my CV</a>
     </div>
   </div>
-  <div id="projects" class="projects container">
-    <h3 class="title mobile-center">My Latest Work</h3>
-    <p class="teaser mobile-center">Take a look at some of my recent projects.</p>
-    <div class="projects--overview">
-      <div class="project">
-        <p class="project--title mobile-center">BIG BUS TOURS</p>
-        <img class="project--image" src="images/projects/big-bus-tours.png" alt="Big Bus Tours" />
-        <div class="project--info mobile-center">
-          <p class="project--description">
-            I worked with a front-end lead developer, the UX team and designers to develop a fully responsive, multi-language, multi-currency Big Bus Tours' website on Magento 2.
-          </p>
-          <div class="project--links">
-            <a class="btn btn--project" href="https://www.bigbustours.com/" target="_blank">VIEW SITE</a>
-          </div>
-          <div class="project--skills">
-            <ul ul class="project--labels">
-              <li class="label">HTML5</li>
-              <li class="label">Sass</li>
-              <li class="label">Bootstrap</li>
-              <li class="label">JQuery</li>
-            </ul>
+
+  <div id="projects" class="projects">
+    <div class="container">
+      <h3 class="title mobile-center">My Latest Work</h3>
+      <p class="teaser mobile-center">Take a look at some of my recent projects.</p>
+      <div class="projects--overview">
+        <div class="project">
+          <p class="project--title mobile-center">BIG BUS TOURS</p>
+          <img class="project--image" src="images/projects/big-bus-tours.png" alt="Big Bus Tours" />
+          <div class="project--info mobile-center">
+            <p class="project--description">
+              I worked with a front-end lead developer, the UX team and designers to develop a fully responsive, multi-language, multi-currency Big Bus Tours' website on Magento 2.
+            </p>
+            <div class="project--links">
+              <a class="btn btn--project" href="https://www.bigbustours.com/" target="_blank">VIEW SITE</a>
+            </div>
+            <div class="project--skills">
+              <ul ul class="project--labels">
+                <li class="label">HTML5</li>
+                <li class="label">Sass</li>
+                <li class="label">Bootstrap</li>
+                <li class="label">JQuery</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="project">
-        <p class="project--title mobile-center">CONTACT LIST</p>
-        <img class="project--image" src="images/projects/contacts-list.png" alt="Contacts list" />
-        <div class="project--info mobile-center">
-          <p class="project--description">
-            Simple CRUD contact list (side project). The main reason to build this project was to play with AngularJS
-            and learn end-to-end testing.
-          </p>
-          <div class="project--links">
-            <a class="btn btn--project" href="http://contacts.skibinska.co.uk/contacts" target="_blank">VIEW SITE</a>
-            <a class="btn btn--project" href="https://github.com/skibinska/contacts" target="_blank">VIEW SOURCE</a>
-          </div>
-          <div class="project--skills">
-            <ul class="project--labels">
-              <li class="label">HTML5</li>
-              <li class="label">CSS3</li>
-              <li class="label">Bootstrap</li>
-              <li class="label">AngularJS</li>
-              <li class="label">Protractor</li>
-            </ul>
+        <div class="project">
+          <p class="project--title mobile-center">CONTACT LIST</p>
+          <img class="project--image" src="images/projects/contacts-list.png" alt="Contacts list" />
+          <div class="project--info mobile-center">
+            <p class="project--description">
+              Simple CRUD contact list (side project). The main reason to build this project was to play with AngularJS
+              and learn end-to-end testing.
+            </p>
+            <div class="project--links">
+              <a class="btn btn--project" href="http://contacts.skibinska.co.uk/contacts" target="_blank">VIEW SITE</a>
+              <a class="btn btn--project" href="https://github.com/skibinska/contacts" target="_blank">VIEW SOURCE</a>
+            </div>
+            <div class="project--skills">
+              <ul class="project--labels">
+                <li class="label">HTML5</li>
+                <li class="label">CSS3</li>
+                <li class="label">Bootstrap</li>
+                <li class="label">AngularJS</li>
+                <li class="label">Protractor</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="contact" class="contact container mobile-center">
-    <h3 class="title">Contact</h3>
-    <p class="teaser">
-      Whether you are an employer looking to hire or would like to get extra information on any of my work, ask me about this site or just say hello then I would love to hear from you.
-    </p>
-    <a class="style-a contact__mail" href="mailto:skibinska.ewelina@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> skibinska.ewelina@gmail.com
-    </a>
-    <!-- See my GitHub CV <a class="style-a" href="https://github.com/skibinska/CV-Ewelina-Skibinska">GitHub</a> -->
+
+  <div id="contact" class="contact mobile-center">
+    <div class="container">
+      <h3 class="title">Contact</h3>
+      <p class="teaser">
+        Whether you are an employer looking to hire or would like to get extra information on any of my work, ask me about this site or just say hello then I would love to hear from you.
+      </p>
+      <a class="style-a contact__mail" href="mailto:skibinska.ewelina@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> skibinska.ewelina@gmail.com
+      </a>
+      <!-- See my GitHub CV <a class="style-a" href="https://github.com/skibinska/CV-Ewelina-Skibinska">GitHub</a> -->
+    </div>
   </div>
 
   <footer class="footer">
-    <div class="footer__content container">
-      <p class="footer__copywrite">Handmade by me © 2017 All Rights Reserved</p>
-      <ul class="footer__social-buttons">
-        <li class="footer__social-button">
-          <a class="style-a" href="https://github.com/skibinska" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="footer__social-button">
-          <a class="style-a" href="https://www.linkedin.com/in/ewelina-skibinska-02717570" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="footer__social-button">
-          <a class="style-a" href="https://twitter.com/ESkibinska" target="_blank">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer__content ">
+        <p class="footer__copywrite">Handmade by me © 2017 All Rights Reserved</p>
+        <ul class="footer__social-buttons">
+          <li class="footer__social-button">
+            <a class="style-a" href="https://github.com/skibinska" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="footer__social-button">
+            <a class="style-a" href="https://www.linkedin.com/in/ewelina-skibinska-02717570" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="footer__social-button">
+            <a class="style-a" href="https://twitter.com/ESkibinska" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
