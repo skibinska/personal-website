@@ -67,9 +67,12 @@
   }
   .project__title
   {
-    font-family: $logo-font;
-    font-weight: bold;
-    font-size: 1.7rem;
+    font:
+    {
+      family: $logo-font;
+      weight: bold;
+      size: 1.7rem;
+    }
     color: $pink;
     letter-spacing: 2px;
     margin-top: 0;
@@ -90,8 +93,11 @@
   }
   .project__description
   {
-    font-family: $intro-font;
-    font-size: 1.5rem;
+    font:
+    {
+      family: $intro-font;
+      size: 1.5rem;
+    }
 
     @media screen and (min-width: 768px)
     {
