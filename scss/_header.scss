@@ -18,17 +18,17 @@
   box-shadow: 0 2px 10px $light-grey;
   background-color: $white;
 }
-.header--logo
+.header__logo
 {
   font-family: $logo-font;
   float: left;
 
-  .header--title
+  .header__title
   {
     margin: 0;
   }
 
-  .header--teaser
+  .header__teaser
   {
     margin-top: -10px;
     margin-left: 35px;
@@ -59,7 +59,7 @@
     top: 0;
   }
 
-  .navigation--item
+  .navigation__item
   {
     list-style-type: none;
     display: inline-block;
