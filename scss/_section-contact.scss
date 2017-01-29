@@ -1,6 +1,13 @@
 @import "variables";
 @import "mixins";
 
+.contact
+{
+  @media screen and (min-width: 768px)
+  {
+    padding-top: 45px;
+  }
+}
 .contact__mail
 {
   color: $pink;
