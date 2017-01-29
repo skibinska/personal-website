@@ -33,3 +33,10 @@
   -o-animation: $name $duration $timing $delay $direction;
   animation: $name $duration $timing $delay $direction;
 }
+@mixin linear-gradient ($direction, $start, $end, $image)
+{
+  background-image: -webkit-linear-gradient($direction, $start, $end), $image;
+  background-image: -o-linear-gradient($direction, $start, $end), $image;
+  background-image: -moz-linear-gradient($direction, $start, $end), $image;
+  background-image: linear-gradient($direction, $start, $end), $image;
+}

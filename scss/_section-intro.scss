@@ -1,18 +1,22 @@
 @import "variables";
+@import "mixins";
 
 .parallax
 {
   height: 600px;
   background:
-  linear-gradient(
+  {
+    position: 100% 0%;
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+  }
+  @include linear-gradient (
+  to bottom,
   rgba(0, 0, 0, 0.2),
-  rgba(0, 0, 0, 0.6)
-  ),
-  url("../images/intro/notebook.jpeg");
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  rgba(0, 0, 0, 0.6),
+  url("../images/intro/notebook.jpeg")
+  );
 
   @media screen and (min-width: 768px)
   {
@@ -28,8 +32,11 @@
 }
 .intro__title
 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font:
+  {
+    size: 2.5rem;
+    weight: bold;
+  }
   margin: 0;
   padding: 50px 0 20px;
 
@@ -41,8 +48,11 @@
 }
 .intro__teaser
 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font:
+  {
+    size: 1.5rem;
+    weight: bold;
+  }
   margin: 0;
 
   @media screen and (min-width: 768px)
