@@ -9,7 +9,6 @@
 {
   margin: 20px 0;
   position: relative;
-  // height: 538px;
 
   @media screen and (min-width: 768px)
   {
@@ -25,13 +24,6 @@
 {
   margin-bottom: 25px;
   border-bottom: 1px solid $light-grey;
-  // width: 348px;
-  // display: block;
-  // position: absolute;
-  // left: 0px;
-  // top: 0px;
-  // transform: translate3d(0px, 0px, 0px);
-  // visibility: visible;
 
   @media screen and (min-width: 768px)
   {
@@ -84,11 +76,11 @@
       margin: 0 auto;
       text-align: left;
       right: -35px;
-    }
 
-    @media screen and (min-width: 1024px)
-    {
-      right: -48px;
+      @media screen and (min-width: 1024px)
+      {
+        right: -48px;
+      }
     }
   }
   .project__description
@@ -102,11 +94,11 @@
     @media screen and (min-width: 768px)
     {
       margin-top: 50px;
-    }
 
-    @media screen and (min-width: 1024px)
-    {
-      margin-top: 70px;
+      @media screen and (min-width: 1024px)
+      {
+        margin-top: 70px;
+      }
     }
   }
   .btn__project
