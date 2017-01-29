@@ -1,0 +1,29 @@
+.employers
+{
+  display: none;
+
+  @media screen and (min-width: 768px)
+  {
+    display: block;
+    padding: 50px 0;
+    text-align: center;
+    border:
+    {
+      top: 1px solid $light-grey;
+      bottom: 1px solid $light-grey;
+    }
+    .employer__logo
+    {
+      width: 225px;
+      height: auto;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .employer__logo-born
+    {
+      position: relative;
+      top: 14px;
+    }
+
+  }
+}

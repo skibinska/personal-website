@@ -363,6 +363,10 @@ body {
     -ms-border-radius: 3px;
     border-radius: 3px; }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    padding-top: 45px; } }
+
 .contact__mail {
   color: #f20561;
   font-size: 1.3rem;
@@ -373,6 +377,24 @@ body {
   @media screen and (min-width: 768px) {
     .contact__mail {
       font-size: 1.6rem; } }
+
+.employers {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .employers {
+      display: block;
+      padding: 50px 0;
+      text-align: center;
+      border-top: 1px solid #f3f3f3;
+      border-bottom: 1px solid #f3f3f3; }
+      .employers .employer__logo {
+        width: 225px;
+        height: auto;
+        display: inline-block;
+        margin-right: 20px; }
+      .employers .employer__logo-born {
+        position: relative;
+        top: 14px; } }
 
 .footer {
   font-family: "Open Sans Condensed", sans-serif;
