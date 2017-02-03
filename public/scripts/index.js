@@ -14,7 +14,7 @@ var PersonalWebsite = (function (document, window) {
 
     function bindEvents () {
       window.addEventListener('scroll', toggleFixedHeader);
-      hamburgerIcon.addEventListener('click', toogleHeaderAnimation);
+      hamburgerIcon.addEventListener('click', toggleHeaderAnimation);
       addScroll('.intro__paragraph-pink');
       addScroll('.btn__intro-projects');
       addScroll('.navigation__item a');
@@ -35,7 +35,7 @@ var PersonalWebsite = (function (document, window) {
       }
     }
 
-    function toogleHeaderAnimation () {
+    function toggleHeaderAnimation () {
       var navigation = document.querySelector('.navigation');
       var isOpen = false;
       this.classList.toggle('active');
