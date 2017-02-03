@@ -2,21 +2,21 @@
   'use strict';
   var PersonalWebsite = {
     props: {
-      navIcon: null,
-      header: null
+      header: null,
+      navIcon: null
     },
     init: function () {
-      this.props.navIcon = document.querySelector('.nav__icon');
       this.props.header = document.querySelector('.header');
+      this.props.navIcon = document.querySelector('.nav__icon');
 
       this.bindEvents();
     },
     bindEvents: function () {
-      PersonalWebsite.props.navIcon.addEventListener('click', PersonalWebsite.toggleClass);
       window.addEventListener('scroll', PersonalWebsite.toggleFixedHeader);
-      PersonalWebsite.addListenerToSelector('.intro__paragraph-pink');
-      PersonalWebsite.addListenerToSelector('.btn__intro-projects');
-      window.onload = PersonalWebsite.addListenerToSelector('.navigation__item a');
+      PersonalWebsite.props.navIcon.addEventListener('click', PersonalWebsite.toggleClass);
+      PersonalWebsite.addScrollToElement('.intro__paragraph-pink');
+      PersonalWebsite.addScrollToElement('.btn__intro-projects');
+      PersonalWebsite.addScrollToElement('.navigation__item a');
     },
     toggleClass: function () {
       var navigation = document.querySelector('.navigation');
@@ -38,10 +38,9 @@
       }
     },
     toggleFixedHeader: function () {
-      var parallax = document.querySelector('.parallax');
       var intro = document.querySelector('.intro');
-      var parallaxHeight = parallax.offsetHeight;
       var headerHeight = PersonalWebsite.props.header.offsetHeight;
+      var parallaxHeight = document.querySelector('.parallax').offsetHeight;
       if (document.body.scrollTop >= parallaxHeight) {
         PersonalWebsite.props.header.classList.remove('js-slide-up');
         PersonalWebsite.props.header.classList.add('js-header--fixed', 'js-slide-down');
@@ -52,7 +51,7 @@
         intro.style.paddingTop = '0px';
       }
     },
-    addListenerToSelector: function (selector) {
+    addScrollToElement: function (selector) {
       var arrayOfElements = document.querySelectorAll(selector);
       Array.apply(null, arrayOfElements).forEach(function (element) {
         element.addEventListener('click', function (e) {
