@@ -90,6 +90,7 @@ body {
   position: absolute;
   left: -60px;
   right: 0;
+  top: 0;
   max-height: 0;
   margin: 60px auto;
   font-family: "Open Sans Condensed", sans-serif;
@@ -239,7 +240,7 @@ body {
     top: -100px; }
   100% {
     opacity: 1;
-    top: 0; } }
+    top: 0px; } }
 .js-slide-down {
   -webkit-animation: slide-down 0.75s ease-in-out 0s normal;
   -moz-animation: slide-down 0.75s ease-in-out 0s normal;
@@ -270,7 +271,7 @@ body {
 @keyframes slide-up {
   0% {
     opacity: 1;
-    top: 0; }
+    top: 0px; }
   100% {
     opacity: 0;
     top: -100px; } }
