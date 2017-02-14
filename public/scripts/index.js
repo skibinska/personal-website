@@ -38,7 +38,7 @@ var PersonalWebsite = (function (document, window) {
       var navigation = document.querySelector('.navigation');
       var isOpen = false;
       this.classList.toggle('active');
-      if (navigation.classList.contains('active')) {
+      if (window.innerWidth < 768 && navigation.classList.contains('active')) {
         navigation.classList.remove('active', 'js-slide-down');
         navigation.classList.add('js-slide-up');
         isOpen = false;
@@ -54,9 +54,9 @@ var PersonalWebsite = (function (document, window) {
     **/
     function resizeHeaderOnMobile (isOpen) {
       if (window.innerWidth < 768 && isOpen === true) {
-        header.style.paddingBottom = '40px';
+        header.classList.add('active');
       } else {
-        header.style.paddingBottom = '0px';
+        header.classList.remove('active');
       }
     }
 

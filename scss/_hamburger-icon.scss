@@ -8,6 +8,7 @@
   position: relative;
   cursor: pointer;
   float: right;
+  z-index: 10;
   @include rotate (0);
   @include transition ();
 
@@ -66,5 +67,10 @@
         @include rotate (-45);
       }
     }
+  }
+  
+  @media screen and (min-width: 768px)
+  {
+    display: none;
   }
 }
