@@ -69,6 +69,11 @@ body {
   -moz-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s; }
+  .header.active {
+    padding-bottom: 150px; }
+    @media screen and (min-width: 768px) {
+      .header.active {
+        padding-bottom: 0; } }
 
 .js-header--fixed {
   height: 70px;

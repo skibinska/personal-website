@@ -54,9 +54,9 @@ var PersonalWebsite = (function (document, window) {
     **/
     function resizeHeaderOnMobile (isOpen) {
       if (window.innerWidth < 768 && isOpen === true) {
-        header.style.paddingBottom = '150px';
+        header.classList.add('active');
       } else {
-        header.style.paddingBottom = '0px';
+        header.classList.remove('active');
       }
     }
 

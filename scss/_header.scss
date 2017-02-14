@@ -12,6 +12,16 @@
   };
   z-index: 10;
   @include transition ();
+
+  &.active
+  {
+    padding-bottom: 150px;
+
+    @media screen and (min-width: 768px)
+    {
+      padding-bottom: 0;
+    }
+  }
 }
 .js-header--fixed
 {
