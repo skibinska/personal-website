@@ -16,7 +16,6 @@ var PersonalWebsite = (function (document, window) {
       window.addEventListener('scroll', toggleFixedHeader);
       hamburgerIcon.addEventListener('click', toggleHeaderAnimation);
       addScroll('.intro__paragraph-pink');
-      addScroll('.btn__intro-projects');
       addScroll('.navigation__item a');
     }
 
@@ -70,7 +69,7 @@ var PersonalWebsite = (function (document, window) {
         element.addEventListener('click', function (e) {
           e.preventDefault();
           var target = document.getElementById(element.getAttribute('href').slice(1));
-          scroll(document.body, target.offsetTop, 500);
+          scroll(document.body, target.offsetTop, 300);
         });
       });
     }
