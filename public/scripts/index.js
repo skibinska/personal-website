@@ -69,7 +69,7 @@ var PersonalWebsite = (function (document, window) {
         element.addEventListener('click', function (e) {
           e.preventDefault();
           var target = document.getElementById(element.getAttribute('href').slice(1));
-          scroll(document.body, target.offsetTop, 500);
+          scroll(document.body, target.offsetTop, 300);
         });
       });
     }
