@@ -6,13 +6,16 @@
 [![Issue Count](https://codeclimate.com/github/skibinska/personal-website/badges/issue_count.svg)](https://codeclimate.com/github/skibinska/personal-website)
 
 ## What?
+
  My personal website containing information about myself, a development portfolio, a CV, and contact details.  
  Still under development.
 
 ## How?
+
 Designed a minimal, responsive mobile-first website.
 
 ### Current tech stack
+
 - HTML5, Sass and following BEM naming conventions
 - vanilla JavaScript
 - Node server with Hapi.js
@@ -23,13 +26,38 @@ Designed a minimal, responsive mobile-first website.
 - ESLint - to ensure that code syntax is consistent
 
 ## Setup
-1. Clone this repo and ```cd personal-website```
-2. Run ```npm i```
-3. To see website:
-  - ```npm run devStart```
-  - navigate to ```localhost:8000```
-4. For e2e tests run: 
-  - ```npm run postinstall``` - to run the selenium-download after all node_modules have been installed
-  - ```npm run e2e``` - to see passing tests
-5. For tape tests:
-  - ```npm run test```
+
+1. ### Clone
+
+ Clone the repository by copy-pasting the following command into your terminal:  
+ ```
+ git clone https://github.com/skibinska/personal-website.git && cd personal-website
+ ```  
+2. ### Install 
+
+ Install the required dependencies  
+ ```
+ npm install
+ ```   
+3. ### View website
+
+   ```
+   npm run devStart
+   ```
+   navigate to ```localhost:8000```  
+4. ### Run tests
+
+   #### e2e:  
+   run the selenium-download after all node_modules have been installed  
+   ```
+   npm run postinstall
+   ```  
+   Run the Nightwatch tests:
+    ```
+   npm run e2e
+   ```
+   #### backend: 
+   Run the Tape tests
+   ```
+   npm test
+   ```
