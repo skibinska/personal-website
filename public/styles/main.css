@@ -296,7 +296,10 @@ body {
   background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/intro/notebook.jpeg");
   background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/intro/notebook.jpeg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/intro/notebook.jpeg"); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 505px) {
+    .parallax {
+      height: 450px; } }
+  @media screen and (min-width: 505px) and (min-width: 768px) {
     .parallax {
       height: 500px; } }
 
@@ -336,10 +339,12 @@ body {
 .btn__intro {
   margin-top: 0.5rem;
   width: 80%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 505px) {
     .btn__intro {
-      margin-top: 2rem;
       width: auto; } }
+  @media screen and (min-width: 505px) and (min-width: 768px) {
+    .btn__intro {
+      margin-top: 2rem; } }
 
 .projects {
   margin-top: 50px; }
@@ -355,13 +360,14 @@ body {
 
 .project {
   margin-bottom: 25px;
-  border-bottom: 1px solid #f3f3f3; }
+  border-bottom: 1px solid #f3f3f3;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .project {
       margin-bottom: 40px;
       border-bottom: none; } }
   .project .project__image {
-    width: 100%;
+    max-width: 100%;
     height: 200px;
     margin-bottom: 10px;
     box-shadow: 0 9px 15px #888888;
@@ -369,10 +375,14 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 426px) {
       .project .project__image {
-        width: 50%;
-        height: 300px; } }
+        height: 250px; } }
+  @media screen and (min-width: 426px) and (min-width: 768px) {
+    .project .project__image {
+      width: 50%;
+      height: 300px; } }
+
   .project .project__info {
     display: inline-block;
     margin-bottom: 20px; }
