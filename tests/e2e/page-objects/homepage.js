@@ -1,19 +1,6 @@
 'use strict';
 
-var homepageCommands = {
-  validateHomepage: function () {
-    return this.waitForElementVisible('body', 1000)
-          .verify.visible('@header')
-          .verify.visible('@intro')
-          .verify.visible('@projects')
-          .verify.visible('@employers')
-          .verify.visible('@contact')
-          .verify.visible('@footer');
-  }
-};
-
 module.exports = {
-  // commands: [homepageCommands],
   url: function () {
     return this.api.launchUrl;
   },
@@ -51,5 +38,17 @@ module.exports = {
     contactListSourceBtn: {
       selector: '.projects__overview .project:last-child .project__links .btn:last-child'
     }
-  }
+  },
+  commands: [
+    {
+      validateHomepage: function () {
+        return this
+              .verify.visible('@header')
+              .verify.visible('@intro')
+              .verify.visible('@projects')
+              .verify.visible('@contact')
+              .verify.visible('@footer');
+      }
+    }
+  ]
 };
