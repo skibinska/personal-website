@@ -1,8 +1,11 @@
+'use strict';
+
 module.exports = {
   'src_folders': [
     'tests/e2e'
   ],
   'output_folder': './tests/e2e/reports',
+  'page_objects_path': './tests/e2e/page-objects',
   'selenium': {
     'start_process': true, // tells nightwatch to start/stop the selenium process
     'server_path': './node_modules/nightwatch/bin/selenium.jar',
@@ -14,6 +17,7 @@ module.exports = {
   },
   'test_settings': {
     'default': {
+      'launch_url': 'http://localhost',
       'screenshots': {
         'enabled': false,
         'path': ''

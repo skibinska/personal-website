@@ -1,26 +1,31 @@
 'use strict';
 
+var baseurl = 'http://localhost:8000';
+var homepage;
+
 module.exports = {
   beforeEach: function (browser) {
     browser
-      .url('http://localhost:8000/')
+      .url(baseurl)
       .waitForElementVisible('body', 1000);
   },
 
   'Checks if elements exist on the page': function (browser) {
-    browser.assert.title('Ewelina Skibinska | Junior Front-end Web developer | Portfolio | Contact');
-    browser.expect.element('.header').to.be.present;
-    browser.expect.element('.intro').to.be.present;
-    browser.expect.element('.projects').to.be.present;
-    browser.expect.element('.employers').to.be.present;
-    browser.expect.element('.contact').to.be.present;
-    browser.expect.element('.footer').to.be.present;
-    browser.expect.element('.nav__icon').to.not.be.visible;
+    homepage = browser.page.homepage();
+    homepage.assert.title('Ewelina Skibinska | Junior Front-end Web developer | Portfolio | Contact');
+    homepage.expect.element('.header').to.be.present;
+    homepage.expect.element('.intro').to.be.present;
+    homepage.expect.element('.projects').to.be.present;
+    homepage.expect.element('.employers').to.be.present;
+    homepage.expect.element('.contact').to.be.present;
+    homepage.expect.element('.footer').to.be.present;
+    homepage.expect.element('.nav__icon').to.not.be.visible;
     browser.end();
   },
 
   'Checks if header changes class on scrolling': function (browser) {
-    browser.assert.attributeEquals('header', 'class', 'header');
+    homepage = browser.page.homepage();
+    homepage.assert.attributeEquals('header', 'class', 'header');
     browser.execute('scrollTo(0,3000)');
     browser.assert.cssClassPresent('header', 'js-header--fixed');
     browser.execute('scrollTo(0,0)');
@@ -29,10 +34,11 @@ module.exports = {
   },
 
   'Checks if external links works': function (browser) {
-    browser.expect.element('.projects__overview .project:last-child .project__title').text.to.equal('CONTACT LIST');
-    browser.expect.element('.projects__overview .project:last-child .project__links .btn:first-child').text.to.equal('VIEW SITE');
-    browser.expect.element('.projects__overview .project:last-child .project__links .btn:last-child').text.to.equal('VIEW SOURCE');
-    browser.click('.projects__overview .project:last-child .project__links .btn:first-child');
+    homepage = browser.page.homepage();
+    homepage.expect.element('.projects__overview .project:last-child .project__title').text.to.equal('CONTACT LIST');
+    homepage.expect.element('@viewSiteButton').text.to.equal('VIEW SITE');
+    homepage.expect.element('@viewSourceButton').text.to.equal('VIEW SOURCE');
+    homepage.click('@viewSiteButton');
     browser.url('http://contacts.skibinska.co.uk/contacts');
     browser.back();
     browser.assert.urlEquals('http://localhost:8000/');
