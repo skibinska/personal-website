@@ -35,7 +35,7 @@ Designed a minimal, responsive mobile-first website.
  ```  
 2. ### Install 
 
- Install the required dependencies  
+ Install the required dependencies:  
  ```
  npm install
  ```   
@@ -44,11 +44,14 @@ Designed a minimal, responsive mobile-first website.
    ```
    npm run devStart
    ```
-   navigate to ```localhost:8000```  
+   navigate to: 
+   ```
+   http://localhost:8000
+   ```  
 4. ### Run tests
 
    #### e2e:  
-   run the selenium-download after all node_modules have been installed  
+   Run the selenium-download after all node_modules have been installed:  
    ```
    npm run postinstall
    ```  
@@ -57,7 +60,7 @@ Designed a minimal, responsive mobile-first website.
    npm run e2e
    ```
    #### backend: 
-   Run the Tape tests
+   Run the Tape tests:
    ```
    npm test
    ```
