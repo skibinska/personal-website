@@ -8,7 +8,9 @@
     "coverage": "istanbul cover ./tests/**/*.js",
     "devStart": "nodemon ./server/start.js",
     "start": "node ./server/start.js",
-    "test": "./node_modules/tape/bin/tape tests/**/*.js | tap-spec"
+    "test": "./node_modules/tape/bin/tape tests/**/*.js | tap-spec",
+    "postinstall": "node tests/e2e/nightwatch.conf.js",
+    "e2e": "./node_modules/.bin/nightwatch --config tests/e2e/nightwatch.conf.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,9 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "istanbul": "^0.4.5",
+    "nightwatch": "^0.9.12",
     "nodemon": "^1.11.0",
+    "selenium-download": "^2.0.9",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },
