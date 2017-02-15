@@ -21,3 +21,8 @@ Designed a minimal, responsive mobile-first website.
 - Continuous Intergration with Travis
 - Code coverage with Codecov and Code Climate
 - ESLint - to ensure that code syntax is consistent
+
+## Setup  
+For e2e tests run: 
+- ```npm run postinstall```
+- ```npm run e2e```
