@@ -24,5 +24,5 @@ Designed a minimal, responsive mobile-first website.
 
 ## Setup  
 For e2e tests run: 
-- ```npm run postinstall```
-- ```npm run e2e```
+- ```npm run postinstall``` - to run the selenium-download script after all node_modules have been installed
+- ```npm run e2e``` - to see passing tests
