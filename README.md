@@ -22,7 +22,14 @@ Designed a minimal, responsive mobile-first website.
 - Code coverage with Codecov and Code Climate
 - ESLint - to ensure that code syntax is consistent
 
-## Setup  
-For e2e tests run: 
-- ```npm run postinstall``` - to run the selenium-download script after all node_modules have been installed
-- ```npm run e2e``` - to see passing tests
+## Setup
+1. Clone this repo and ```cd personal-website```
+2. Run ```npm i```
+3. To see website:
+  - ```npm run devStart```
+  - navigate to ```localhost:8000```
+4. For e2e tests run: 
+  - ```npm run postinstall``` - to run the selenium-download after all node_modules have been installed
+  - ```npm run e2e``` - to see passing tests
+5. For tape tests:
+  - ```npm run test```
