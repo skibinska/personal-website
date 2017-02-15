@@ -17,7 +17,7 @@ Designed a minimal, responsive mobile-first website.
 - vanilla JavaScript
 - Node server with Hapi.js
 - Backend testing with Tape
-- Frontend testing with Nightwatch.js
+- e2e testing with Nightwatch.js
 - Continuous Intergration with Travis
 - Code coverage with Codecov and Code Climate
 - ESLint - to ensure that code syntax is consistent
