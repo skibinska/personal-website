@@ -40,18 +40,19 @@ Designed a minimal, responsive mobile-first website.
  npm install
  ```   
 3. ### View website
-
+  
+   Run the server:
    ```
    npm run devStart
    ```
-   navigate to: 
+   Navigate to: 
    ```
    http://localhost:8000
    ```  
 4. ### Run tests
 
    #### e2e:  
-   Run the selenium-download after all node_modules have been installed:  
+   Run the *selenium-download* after all node_modules have been installed:  
    ```
    npm run postinstall
    ```  
