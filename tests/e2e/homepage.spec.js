@@ -1,17 +1,15 @@
 'use strict';
 
-var baseurl = 'http://localhost:8000';
-var homepage;
-
 module.exports = {
   beforeEach: function (browser) {
+    var baseurl = 'http://localhost:8000';
     browser
       .url(baseurl)
       .waitForElementVisible('body', 1000);
   },
 
   'Checks if elements exist on the page': function (browser) {
-    homepage = browser.page.homepage();
+    var homepage = browser.page.homepage();
     homepage.assert.title('Ewelina Skibinska | Junior Front-end Web developer | Portfolio | Contact');
     homepage.expect.element('.header').to.be.present;
     homepage.expect.element('.intro').to.be.present;
@@ -24,7 +22,7 @@ module.exports = {
   },
 
   'Checks if header changes class on scrolling': function (browser) {
-    homepage = browser.page.homepage();
+    var homepage = browser.page.homepage();
     homepage.assert.attributeEquals('header', 'class', 'header');
     browser.execute('scrollTo(0,3000)');
     browser.assert.cssClassPresent('header', 'js-header--fixed');
@@ -34,11 +32,11 @@ module.exports = {
   },
 
   'Checks if external links works': function (browser) {
-    homepage = browser.page.homepage();
+    var homepage = browser.page.homepage();
     homepage.expect.element('.projects__overview .project:last-child .project__title').text.to.equal('CONTACT LIST');
-    homepage.expect.element('@viewSiteButton').text.to.equal('VIEW SITE');
-    homepage.expect.element('@viewSourceButton').text.to.equal('VIEW SOURCE');
-    homepage.click('@viewSiteButton');
+    homepage.expect.element('@viewContactListSiteButton').text.to.equal('VIEW SITE');
+    homepage.expect.element('@viewContactListSourceButton').text.to.equal('VIEW SOURCE');
+    homepage.click('@viewContactListSiteButton');
     browser.url('http://contacts.skibinska.co.uk/contacts');
     browser.back();
     browser.assert.urlEquals('http://localhost:8000/');

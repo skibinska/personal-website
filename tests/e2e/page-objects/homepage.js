@@ -5,10 +5,10 @@ module.exports = {
     return this.api.launchUrl;
   },
   elements: {
-    viewSiteButton: {
+    viewContactListSiteButton: {
       selector: '.projects__overview .project:last-child .project__links .btn:first-child'
     },
-    viewSourceButton: {
+    viewContactListSourceButton: {
       selector: '.projects__overview .project:last-child .project__links .btn:last-child'
     }
   }
