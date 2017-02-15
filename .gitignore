@@ -1,7 +1,17 @@
+# exclued selenium.jar from GitHub it's 21MB!
+nightwatch
+nightwatch/selenium.jar
+
+# exclude chromedriver as its 12MB and changes frequently!
+nightwatch/chromedriver
+
+tests/e2e/reports
+
 # Logs
 logs
 *.log
 npm-debug.log*
+selenium-debug.log
 
 # Runtime data
 pids
