@@ -8,14 +8,14 @@ module.exports = {
       .waitForElementVisible('body', 1000);
   },
 
-  'Checks if elements exist on the page': function (browser) {
-    var homepage = browser.page.homepage();
-    homepage
-            .validateHomepage()
-            .verify.visible('@employers')
-            .expect.element('@hamburgerIcon').to.not.be.visible;
-    browser.end();
-  }
+  // 'Checks if elements exist on the page - desktop view': function (browser) {
+  //   var homepage = browser.page.homepage();
+  //   homepage
+  //           .validateHomepage()
+  //           .verify.visible('@employers')
+  //           .expect.element('@hamburgerIcon').to.not.be.visible;
+  //   browser.end();
+  // },
 
   // 'Checks if header changes class on scrolling': function (browser) {
   //   browser.assert.attributeEquals('header', 'class', 'header');
@@ -39,12 +39,15 @@ module.exports = {
   //          .end();
   // },
   //
-  // 'Checks mobile view': function (browser) {
-  //   var homepage = browser.page.homepage();
-  //   browser.resizeWindow(320, 517);
-  //   homepage.expect.element('@employers').to.not.be.visible;
-  //   browser.end();
-  // },
+  'Checks if elements exist on the page - mobile view': function (browser) {
+    var homepage = browser.page.homepage();
+    browser.resizeWindow(320, 517);
+    homepage
+            .validateHomepage()
+            .verify.visible('@hamburgerIcon')
+            .expect.element('@employers').to.not.be.visible;
+    browser.end();
+  }
   //
   // 'Checks navigation on mobile': function (browser) {
   //   var homepage = browser.page.homepage();
