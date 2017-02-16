@@ -50,6 +50,7 @@ Designed a minimal, responsive mobile-first website.
 4. Run tests
 
    **e2e**:  
+   
    Run the *selenium-download* after all node_modules have been installed:  
    ```
    npm run postinstall
@@ -58,7 +59,9 @@ Designed a minimal, responsive mobile-first website.
     ```
    npm run e2e
    ```
-   **backend**: 
+   
+   **backend**:  
+   
    Run the Tape tests:
    ```
    npm test
