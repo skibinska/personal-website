@@ -29,9 +29,6 @@ module.exports = {
     navigateToContact: {
       selector: '.navigation__item:nth-child(3) a'
     },
-    contactListTitle: {
-      selector: '.projects__overview .project:last-child .project__title'
-    },
     contactListSiteBtn: {
       selector: '.projects__overview .project:last-child .project__links .btn:first-child'
     },

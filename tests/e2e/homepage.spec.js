@@ -1,10 +1,11 @@
 'use strict';
 
+var baseUrl = 'http://localhost:8000/';
+
 module.exports = {
   beforeEach: function (browser) {
-    var baseurl = 'http://localhost:8000';
     browser
-      .url(baseurl)
+      .url(baseUrl)
       .waitForElementVisible('body', 1000);
   },
 
@@ -27,27 +28,29 @@ module.exports = {
   // },
   //
   // 'Checks if external links works': function (browser) {
+  //   var contactsListPage = 'http://contacts.skibinska.co.uk/contacts';
   //   var homepage = browser.page.homepage();
   //   homepage
-  //           .assert.containsText('@contactListTitle', 'CONTACT LIST')
   //           .assert.containsText('@contactListSiteBtn', 'VIEW SITE')
   //           .assert.containsText('@contactListSourceBtn', 'VIEW SOURCE')
-  //           .click('@contactListSiteBtn');
-  //   browser.url('http://contacts.skibinska.co.uk/contacts')
-  //          .back()
-  //          .assert.urlEquals('http://localhost:8000/')
-  //          .end();
+  //           .click('@contactListSiteBtn')
+  //           .assert.attributeContains('@contactListSiteBtn', 'href', contactsListPage)
+  //           .navigate(contactsListPage);
+  //   browser
+  //         .back()
+  //         .assert.urlEquals(baseUrl)
+  //         .end();
   // },
   //
-  'Checks if elements exist on the page - mobile view': function (browser) {
-    var homepage = browser.page.homepage();
-    browser.resizeWindow(320, 517);
-    homepage
-            .validateHomepage()
-            .verify.visible('@hamburgerIcon')
-            .expect.element('@employers').to.not.be.visible;
-    browser.end();
-  }
+  // 'Checks if elements exist on the page - mobile view': function (browser) {
+  //   var homepage = browser.page.homepage();
+  //   browser.resizeWindow(320, 517);
+  //   homepage
+  //           .validateHomepage()
+  //           .verify.visible('@hamburgerIcon')
+  //           .expect.element('@employers').to.not.be.visible;
+  //   browser.end();
+  // },
   //
   // 'Checks navigation on mobile': function (browser) {
   //   var homepage = browser.page.homepage();
