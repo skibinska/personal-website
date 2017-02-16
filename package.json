@@ -16,8 +16,8 @@
     "type": "git",
     "url": "git+https://github.com/skibinska/personal-website.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ewelina Skibinska",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/skibinska/personal-website/issues"
   },
