@@ -5,11 +5,47 @@ module.exports = {
     return this.api.launchUrl;
   },
   elements: {
-    viewContactListSiteButton: {
+    header: {
+      selector: '.header'
+    },
+    intro: {
+      selector: '.intro'
+    },
+    projects: {
+      selector: '#projects'
+    },
+    employers: {
+      selector: '.employers'
+    },
+    contact: {
+      selector: '.contact'
+    },
+    footer: {
+      selector: '.footer'
+    },
+    hamburgerIcon: {
+      selector: '.header .nav__icon'
+    },
+    navigateToContact: {
+      selector: '.navigation__item:nth-child(3) a'
+    },
+    contactListSiteBtn: {
       selector: '.projects__overview .project:last-child .project__links .btn:first-child'
     },
-    viewContactListSourceButton: {
+    contactListSourceBtn: {
       selector: '.projects__overview .project:last-child .project__links .btn:last-child'
     }
-  }
+  },
+  commands: [
+    {
+      validateHomepage: function () {
+        return this
+              .verify.visible('@header')
+              .verify.visible('@intro')
+              .verify.visible('@projects')
+              .verify.visible('@contact')
+              .verify.visible('@footer');
+      }
+    }
+  ]
 };
