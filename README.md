@@ -27,19 +27,17 @@ Designed a minimal, responsive mobile-first website.
 
 ## Setup
 
-1. ### Clone
-
- Clone the repository by copy-pasting the following command into your terminal:  
+1. Clone the repository by copy-pasting the following command into your terminal:
+   
  ```
  git clone https://github.com/skibinska/personal-website.git && cd personal-website
  ```  
-2. ### Install 
-
- Install the required dependencies:  
+2. Install the required dependencies: 
+  
  ```
  npm install
  ```   
-3. ### View website
+3. View website
   
    Run the server:
    ```
@@ -49,9 +47,9 @@ Designed a minimal, responsive mobile-first website.
    ```
    http://localhost:8000
    ```  
-4. ### Run tests
+4. Run tests
 
-   #### e2e:  
+   **e2e**:  
    Run the *selenium-download* after all node_modules have been installed:  
    ```
    npm run postinstall
@@ -60,7 +58,7 @@ Designed a minimal, responsive mobile-first website.
     ```
    npm run e2e
    ```
-   #### backend: 
+   **backend**: 
    Run the Tape tests:
    ```
    npm test
