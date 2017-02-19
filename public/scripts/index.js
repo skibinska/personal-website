@@ -17,6 +17,7 @@ var PersonalWebsite = (function (document, window) {
       hamburgerIcon.addEventListener('click', toggleHeaderAnimation);
       addScroll('.intro__paragraph-pink');
       addScroll('.navigation__item a');
+      document.querySelector('.navigation__item--cv').addEventListener('click', updateHeader);
     }
 
     function toggleFixedHeader () {
