@@ -37,7 +37,7 @@ var PersonalWebsite = (function (document, window) {
     function toggleHeaderAnimation () {
       var navigation = document.querySelector('.navigation');
       var isOpen = false;
-      this.classList.toggle('active');
+      this.classList.toggle('active'); // animates humburder icon
       if (navigation.classList.contains('active')) {
         navigation.classList.remove('active', 'js-slide-down');
         navigation.classList.add('js-slide-up');
@@ -60,6 +60,18 @@ var PersonalWebsite = (function (document, window) {
       }
     }
 
+    function updateHeader () {
+      if (header.classList.contains('active')) {
+        header.classList.remove('active');
+        document.querySelector('.navigation').classList.remove('active');
+        hamburgerIcon.classList.remove('active');
+      } else {
+        header.classList.add('active');
+        document.querySelector('.navigation').classList.add('active');
+        hamburgerIcon.classList.add('active');
+      }
+    }
+
     /**
     *  @param {String} selector
     **/
@@ -69,6 +81,7 @@ var PersonalWebsite = (function (document, window) {
         element.addEventListener('click', function (e) {
           e.preventDefault();
           var target = document.getElementById(element.getAttribute('href').slice(1));
+          updateHeader();
           scroll(document.body, target.offsetTop, 300);
         });
       });
