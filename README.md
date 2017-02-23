@@ -10,6 +10,10 @@
  My personal website containing information about myself, a development portfolio, a CV, and contact details.  
  Still under development.
 
+ Wireframes:
+
+ ![personal website mockup](https://cloud.githubusercontent.com/assets/10700103/23277714/cc3c807e-fa06-11e6-8713-73b997ecfb3a.png)
+
 ## How?
 
 Designed a minimal, responsive mobile-first website.
@@ -28,29 +32,29 @@ Designed a minimal, responsive mobile-first website.
 ## Setup
 
 1. Clone the repository by copy-pasting the following command into your terminal:
-   
+
  ```
  git clone https://github.com/skibinska/personal-website.git && cd personal-website
  ```  
-2. Install the required dependencies: 
-  
+2. Install the required dependencies:
+
  ```
  npm install
  ```   
 3. View website
-  
+
    Run the server:
    ```
    npm run devStart
    ```
-   Navigate to: 
+   Navigate to:
    ```
    http://localhost:8000
    ```  
 4. Run tests
 
    **e2e**:  
-   
+
    Run the *selenium-download* after all node_modules have been installed:  
    ```
    npm run postinstall
@@ -59,9 +63,9 @@ Designed a minimal, responsive mobile-first website.
     ```
    npm run e2e
    ```
-   
+
    **backend**:  
-   
+
    Run the Tape tests:
    ```
    npm test
