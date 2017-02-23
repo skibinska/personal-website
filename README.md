@@ -10,7 +10,7 @@
  My personal website containing information about myself, a development portfolio, a CV, and contact details.  
  Still under development.
 
- Wireframes:
+ ### Personal Website - mockup
 
  ![personal website mockup](https://cloud.githubusercontent.com/assets/10700103/23277714/cc3c807e-fa06-11e6-8713-73b997ecfb3a.png)
 
@@ -20,14 +20,15 @@ Designed a minimal, responsive mobile-first website.
 
 ### Current tech stack
 
-- HTML5, Sass and following BEM naming conventions
-- vanilla JavaScript
-- Node server with Hapi.js
-- Backend testing with Tape
-- e2e testing with Nightwatch.js
-- Continuous Intergration with Travis
-- Code coverage with Codecov and Code Climate
-- ESLint - to ensure that code syntax is consistent
+- creating prototypes using **Balsamiq**
+- **HTML5**, **Sass** and following **BEM** naming conventions
+- **vanilla JavaScript**
+- Node server with **Hapi.js**
+- Backend testing with **Tape**
+- e2e testing with **Nightwatch.js**
+- Continuous Intergration with **Travis**
+- Code coverage with **Codecov** and **Code Climate**
+- **ESLint** - to ensure that code syntax is consistent
 
 ## Setup
 
