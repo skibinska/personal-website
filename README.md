@@ -12,7 +12,7 @@
 
 ### Personal Website - mockup
 
- ![personal website mockup](https://cloud.githubusercontent.com/assets/10700103/23277714/cc3c807e-fa06-11e6-8713-73b997ecfb3a.png)
+ ![personal website mockup](https://cloud.githubusercontent.com/assets/10700103/23280866/ca8f2a2c-fa12-11e6-957c-7ac888277008.png)
 
 ## How?
 
