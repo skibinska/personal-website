@@ -9,6 +9,8 @@
 
  My personal website containing information about myself, a development portfolio, a CV, and contact details.  
  Still under development.
+ 
+ You can find this website hosted [here](http://ewelina.skibinska.co.uk/).
 
 ### Personal Website - mockup
 
