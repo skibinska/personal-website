@@ -35,7 +35,7 @@ body {
   display: inline-block;
   padding: 18px 26px;
   margin-right: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  border: 2px solid white;
   color: inherit;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -306,7 +306,7 @@ body {
 .intro {
   clear: both;
   font-family: "Josefin Sans", sans-serif;
-  color: rgba(255, 255, 255, 0.9); }
+  color: white; }
 
 .intro__title {
   font-size: 2.5rem;
@@ -437,7 +437,7 @@ body {
   .project .label {
     display: inline-block;
     padding: 5px;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     letter-spacing: 0.5px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 0.9rem;
