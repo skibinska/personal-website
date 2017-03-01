@@ -411,7 +411,7 @@ body {
 
   .project .project__description {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.8rem; }
     @media screen and (min-width: 768px) {
       .project .project__description {
@@ -421,22 +421,27 @@ body {
       margin-top: 70px; } }
 
   .project .btn__project {
-    border: 2px solid black;
+    border: 1.5px solid black;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 0.8rem;
+    letter-spacing: 0.5px;
     -webkit-transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s; }
     .project .btn__project:hover {
-      border: 2px solid #f20561; }
+      border: 1.5px solid #f20561; }
   .project .project__labels {
     padding: 0; }
   .project .label {
     display: inline-block;
     padding: 5px;
     color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 0.9rem;
+    font-weight: bold;
     background-color: #f20561;
     margin-bottom: 5px;
     -webkit-border-radius: 3px;
@@ -451,6 +456,8 @@ body {
 .contact__mail {
   color: #f20561;
   font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
   display: inline-block;
   text-align: center;
   margin-top: 20px;
