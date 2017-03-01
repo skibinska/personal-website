@@ -89,7 +89,7 @@ body {
     margin: 0; }
   .header__logo .header__teaser {
     margin-top: -10px;
-    margin-left: 35px; }
+    margin-left: 24px; }
 
 .navigation {
   position: absolute;
@@ -321,7 +321,8 @@ body {
 .intro__teaser {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.8rem; }
   @media screen and (min-width: 768px) {
     .intro__teaser {
       font-size: 2rem; } }
