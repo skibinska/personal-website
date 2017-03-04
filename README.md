@@ -8,7 +8,6 @@
 ## What?
 
  My personal website containing information about myself, a development portfolio, a CV, and contact details.  
- Still under development.
  
  You can find this website hosted [here](http://ewelina.skibinska.co.uk/).
 
@@ -18,7 +17,7 @@
 
 ## How?
 
-Designed a minimal, responsive mobile-first website.
+Designed a minimal, responsive, mobile-first website.
 
 ### Current tech stack
 
