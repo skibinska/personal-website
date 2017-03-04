@@ -94,7 +94,7 @@
     font:
     {
       family: $intro-font;
-      size: 1.5rem;
+      size: 1.3rem;
     }
     line-height: 1.8rem;
 
@@ -110,17 +110,23 @@
   }
   .btn__project
   {
-    border: 2px solid $black;
-    padding: 10px;
-    font-size: 0.8rem;
+    border: 1.5px solid $black;
+    padding: 12px;
+    font:
+    {
+      family: $intro-font;
+      size: 0.8rem;
+    }
+    letter-spacing: 0.5px;
     @include transition ();
 
     &:hover
     {
-      border: 2px solid $pink;
+      border: 1.5px solid $pink;
     }
   }
-  .project__labels {
+  .project__labels
+  {
     padding: 0;
   }
   .label
@@ -128,7 +134,13 @@
     display: inline-block;
     padding: 5px;
     color: $white;
-    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font:
+    {
+      family: $intro-font;
+      size: 0.9rem;
+      weight: bold;
+    }
     background-color: $pink;
     margin-bottom: 5px;
     @include border-radius (3px);

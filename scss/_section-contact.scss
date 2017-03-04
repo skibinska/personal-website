@@ -11,7 +11,12 @@
 .contact__mail
 {
   color: $pink;
-  font-size: 1.3rem;
+  font:
+  {
+    size: 1.3rem;
+    weight: bold;
+    family: $intro-font;
+  }
   display: inline-block;
   text-align: center;
   margin:

@@ -58,7 +58,8 @@
     weight: bold;
   }
   margin: 0;
-
+  line-height: 1.8rem;
+  
   @media screen and (min-width: 768px)
   {
     font-size: 2rem;
@@ -66,7 +67,7 @@
 }
 .intro__paragraph
 {
-  color: $dark-white;
+  color: $white;
   font-size: 1.2rem;
   line-height: 1.8rem;
 
