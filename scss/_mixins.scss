@@ -19,7 +19,7 @@
 }
 @mixin scale ($scale)
 {
-	 @include transform(scale($scale));
+  @include transform(scale($scale));
 }
 @mixin transition ($property: all, $duration: .5s, $timing: ease-in-out, $delay: 0s)
 {
